@@ -1,0 +1,80 @@
+{
+  "total": 50,
+  "por_status": {
+    "ok": 38,
+    "needs_review": 12
+  },
+  "por_tipo": {
+    "relatorio_manutencao": 16,
+    "nota_fiscal": 17,
+    "contrato": 17
+  },
+  "com_nova_tentativa": 8,
+  "tokens_in": 62790,
+  "tokens_out": 23444,
+  "tokens_in_medio_por_documento": 1256,
+  "latencia_llm_media_ms": 3083,
+  "ocr_conf_media": 90.0,
+  "pendentes": [
+    {
+      "arquivo": "001_rljd.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (27334.45) diferente do total do documento (25791.45)"
+    },
+    {
+      "arquivo": "004_19u4.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (15250.0) diferente do total do documento (15150.0)"
+    },
+    {
+      "arquivo": "005_6zwp.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (3224.2) diferente do total do documento (2574.2)"
+    },
+    {
+      "arquivo": "006_nqsa.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (4720.8) diferente do total do documento (4658.0)"
+    },
+    {
+      "arquivo": "007_7mav.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (5314.5) diferente do total do documento (5157.5)"
+    },
+    {
+      "arquivo": "008_sl0j.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (8715.5) diferente do total do documento (8038.5)"
+    },
+    {
+      "arquivo": "010_rt7s.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (33000.0) diferente do total do documento (35000.0)"
+    },
+    {
+      "arquivo": "012_t4cp.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (15605.0) diferente do total do documento (12605.0)"
+    },
+    {
+      "arquivo": "013_blbv.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (4720.8) diferente do total do documento (4658.0)"
+    },
+    {
+      "arquivo": "014_yfas.pdf",
+      "status": "needs_review",
+      "motivo": "extração não passou na validação após 2 tentativa(s): item 2 sem quantidade"
+    },
+    {
+      "arquivo": "016_of67.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (14945.0) diferente do total do documento (13745.0)"
+    },
+    {
+      "arquivo": "017_cbcq.pdf",
+      "status": "needs_review",
+      "motivo": "inconsistência no documento: soma dos itens (33000.0) diferente do total do documento (35000.0)"
+    }
+  ]
+}
