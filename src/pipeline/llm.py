@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import time
+import warnings
 from dataclasses import dataclass
 from functools import lru_cache
 
@@ -10,6 +11,7 @@ from pydantic import BaseModel
 
 from pipeline import config
 
+warnings.filterwarnings("ignore", message=".*fixed sampling defaults.*")
 
 class ErroLLM(Exception):
     """Falha ao obter uma resposta estruturada válida do modelo."""
