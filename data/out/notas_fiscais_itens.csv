@@ -1,0 +1,80 @@
+﻿arquivo,item,descricao,quantidade,valor_unitario,valor_total
+001_rljd.pdf,1,Notebook Dell Inspiron 15,5.0,3899.99,19499.95
+001_rljd.pdf,2,Mouse sem fio Logitech M280,10.0,89.9,899.0
+001_rljd.pdf,3,Teclado mecânico Redragon Kumara,8.0,249.0,1992.0
+001_rljd.pdf,4,Monitor LG 24 polegadas Full HD,5.0,899.0,4495.0
+001_rljd.pdf,5,"Cabo HDMI 2.0 1,8m",15.0,29.9,448.5
+002_wyfi.pdf,1,Cadeira presidente ergonômica,5.0,1290.0,6450.0
+002_wyfi.pdf,2,"Mesa escritório 1,50m c/ gavetas",5.0,850.0,4250.0
+002_wyfi.pdf,3,Armário alto 2 portas,3.0,720.0,2160.0
+002_wyfi.pdf,4,Gaveteiro volante 3 gavetas,5.0,380.0,1900.0
+003_k11j.pdf,1,Serviço de buffet completo p/ 100 pessoas,1.0,8500.0,8500.0
+003_k11j.pdf,2,Bebidas variadas pacote evento,1.0,1200.0,1200.0
+003_k11j.pdf,3,Decoração temática,1.0,950.0,950.0
+003_k11j.pdf,4,Garçom adicional diária,3.0,280.0,840.0
+004_19u4.pdf,1,Tecido algodão cru metro linear,500.0,18.9,9450.0
+004_19u4.pdf,2,Linha de costura industrial cone 5000m,50.0,24.0,1200.0
+004_19u4.pdf,3,Zíper nylon 20cm cx c/100,20.0,85.0,1700.0
+004_19u4.pdf,4,Botão plástico 4 furos milheiro,10.0,120.0,1200.0
+004_19u4.pdf,5,Entretela termocolante metro,200.0,8.5,1700.0
+005_6zwp.pdf,1,Pão francês kg,50.0,14.9,745.0
+005_6zwp.pdf,2,Bolo de chocolate inteiro,10.0,65.0,650.0
+005_6zwp.pdf,3,Salgado frito cento,5.0,120.0,600.0
+005_6zwp.pdf,4,Café especial kg,8.0,89.9,719.2
+005_6zwp.pdf,5,Torta salgada grande,6.0,85.0,510.0
+006_nqsa.pdf,1,Óleo motor 5W30 sintético 1L,24.0,45.9,1101.6
+006_nqsa.pdf,2,Filtro de óleo,12.0,35.0,420.0
+006_nqsa.pdf,3,Pastilha de freio dianteira jogo,8.0,189.9,1519.2
+006_nqsa.pdf,4,Amortecedor dianteiro par,4.0,420.0,1680.0
+007_7mav.pdf,1,Detergente industrial 5L,30.0,32.9,987.0
+007_7mav.pdf,2,Desinfetante concentrado 5L,25.0,45.9,1147.5
+007_7mav.pdf,3,Papel higiênico rolão 300m fardo c/8,20.0,68.0,1360.0
+007_7mav.pdf,4,Saco de lixo 100L pct c/100,15.0,55.0,825.0
+007_7mav.pdf,5,Luva de borracha par,50.0,12.9,645.0
+007_7mav.pdf,6,Rodo alumínio 60cm,10.0,35.0,350.0
+008_sl0j.pdf,1,Luva de procedimento látex cx c/100,50.0,42.9,2145.0
+008_sl0j.pdf,2,Seringa descartável 10ml cx c/100,30.0,65.0,1950.0
+008_sl0j.pdf,3,Álcool gel 70% 5 litros,20.0,49.9,998.0
+008_sl0j.pdf,4,Máscara cirúrgica tripla cx c/50,40.0,18.9,756.0
+008_sl0j.pdf,5,Estetoscópio Littmann Classic |ll,3.0,689.0,2067.0
+008_sl0j.pdf,6,Termômetro digital infravermelho,5.0,159.9,799.5
+009_jfm4.pdf,1,Serviço de buffet completo p/ 100 pessoas,1.0,8500.0,8500.0
+009_jfm4.pdf,2,Bebidas variadas pacote evento,1.0,1200.0,1200.0
+009_jfm4.pdf,3,Decoração temática,1.0,950.0,950.0
+009_jfm4.pdf,4,Garçom adicional diária,3.0,280.0,840.0
+010_rt7s.pdf,1,Consultoria financeira mensal,3.0,4500.0,13500.0
+010_rt7s.pdf,2,Análise de viabilidade econômica,1.0,8000.0,8000.0
+010_rt7s.pdf,3,Treinamento equipe comercial 8h,2.0,2500.0,5000.0
+010_rt7s.pdf,4,Elaboração plano de negócios,1.0,6500.0,6500.0
+011_s3hm.pdf,1,Frete rodoviário SP-RJ carga fechad,2.0,3200.0,6400.0
+011_s3hm.pdf,2,Frete rodoviário SP-BH carga fracio,5.0,890.0,4450.0
+011_s3hm.pdf,3,Seguro transporte,7.0,180.0,1260.0
+011_s3hm.pdf,4,Taxa de coleta,7.0,150.0,1050.0
+012_t4cp.pdf,1,Cimento CP 1l 50kg,100.0,38.9,3890.0
+012_t4cp.pdf,2,Vergalhão CA-50 10mm barra 12m,50.0,89.9,4495.0
+012_t4cp.pdf,3,Tijolo cerâmico 8 furos milheiro,5.0,890.0,4450.0
+012_t4cp.pdf,4,Areia média mº,10.0,145.0,1450.0
+012_t4cp.pdf,5,Brita 1 mº,8.0,165.0,1320.0
+013_blbv.pdf,1,Óleo motor 5W30 sintético 1L,24.0,45.9,1101.6
+013_blbv.pdf,2,Filtro de óleo,12.0,35.0,420.0
+013_blbv.pdf,3,Pastilha de freio dianteira jogo,8.0,189.9,1519.2
+013_blbv.pdf,4,Amortecedor dianteiro par,4.0,420.0,1680.0
+014_yfas.pdf,1,Luva de procedimento látex cx c/100,50.0,42.9,2145.0
+014_yfas.pdf,2,Seringa descartável 10ml cx c/100,,65.0,1950.0
+014_yfas.pdf,3,Álcool gel 70% 5 litros,20.0,49.9,998.0
+014_yfas.pdf,4,Máscara cirúrgica tripla ex c/50,40.0,18.9,756.0
+014_yfas.pdf,5,Estetoscópio Littmann Classic |ll,3.0,689.0,2067.0
+014_yfas.pdf,6,Termômetro digital infravermelho,5.0,159.9,799.5
+015_a7mn.pdf,1,Cadeira presidente ergon4mica,5.0,1290.0,6450.0
+015_a7mn.pdf,2,"Mesa escrit3rio 1,50m c/ gavetas",5.0,850.0,4250.0
+015_a7mn.pdf,3,Arm4rio alto 2 portas,3.0,720.0,2160.0
+015_a7mn.pdf,4,Gaveteiro volante 3 gavetas,5.0,380.0,1900.0
+016_of67.pdf,1,Ração bovina engorda 40kg,50.0,98.9,4945.0
+016_of67.pdf,2,Sal mineral bovino 30kg,30.0,85.0,2550.0
+016_of67.pdf,3,Vermífugo bovino 1L,20.0,145.0,2900.0
+016_of67.pdf,4,Vacina aftosa dose,100.0,3.5,350.0
+016_of67.pdf,5,Arame farpado rolo 500m,10.0,420.0,4200.0
+017_cbcq.pdf,1,Consultoria financeira mensal,3.0,4500.0,13500.0
+017_cbcq.pdf,2,Análise de viabilidade econômica,1.0,8000.0,8000.0
+017_cbcq.pdf,3,Treinamento equipe comercial 8h,2.0,2500.0,5000.0
+017_cbcq.pdf,4,Elaboração plano de negócios,1.0,6500.0,6500.0
