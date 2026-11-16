@@ -10,6 +10,7 @@ RAIZ = Path(__file__).resolve().parents[2]
 PROMPTS_DIR = Path(__file__).resolve().parent / "prompts"
 
 MODELO = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
+MODELO_FORTE = os.getenv("GEMINI_MODEL_FORTE", "gemini-3.5-flash")
 PROJETO_GCP = os.getenv("GOOGLE_CLOUD_PROJECT")
 LOCAL_GCP = os.getenv("GOOGLE_CLOUD_LOCATION", "global")
 USAR_VERTEX = bool(PROJETO_GCP)
