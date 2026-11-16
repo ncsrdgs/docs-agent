@@ -27,10 +27,10 @@ class Uso:
         self.latencia_ms += outro.latencia_ms
 
 
-@lru_cache(maxsize=1)
-def _modelo() -> ChatGoogleGenerativeAI:
+@lru_cache(maxsize=4)
+def _modelo(nome: str) -> ChatGoogleGenerativeAI:
     opcoes = dict(
-        model=config.MODELO,
+        model=nome,
         temperature=config.TEMPERATURA,
         max_retries=config.MAX_RETRIES,
         timeout=config.TIMEOUT_S,
@@ -39,11 +39,12 @@ def _modelo() -> ChatGoogleGenerativeAI:
         opcoes.update(vertexai=True, project=config.PROJETO_GCP, location=config.LOCAL_GCP)
     return ChatGoogleGenerativeAI(**opcoes)
 
+
 def extrair_estruturado(
-    schema: type[BaseModel], instrucoes: str, texto: str
+    schema: type[BaseModel], instrucoes: str, texto: str, modelo: str | None = None
 ) -> tuple[BaseModel, Uso]:
     """Chama o modelo e devolve (objeto validado no schema, uso de tokens e tempo)."""
-    cadeia = _modelo().with_structured_output(schema, include_raw=True)
+    cadeia = _modelo(modelo or config.MODELO).with_structured_output(schema, include_raw=True)
 
     inicio = time.perf_counter()
     try:

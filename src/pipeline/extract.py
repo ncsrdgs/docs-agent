@@ -15,7 +15,8 @@ PROMPTS = {
 def extrair(tipo: str, texto: str, erro: str | None = None):
     """Extrai os campos do tipo informado. Devolve (modelo_extraido, Uso).
 
-    Se `erro` vier preenchido (retry), ele é anexado ao prompt para o modelo corrigir.
+    Se `erro` vier preenchido (nova tentativa), ele é anexado ao prompt e a chamada
+    usa o modelo mais forte (MODELO_FORTE). A primeira tentativa usa o modelo barato.
     """
     if tipo not in SCHEMA_EXTRACAO:
         raise ValueError(f"tipo sem extração: {tipo}")
@@ -25,7 +26,8 @@ def extrair(tipo: str, texto: str, erro: str | None = None):
             f"\n\nA tentativa anterior foi rejeitada: {erro}\n"
             "Releia o documento e extraia de novo, copiando os valores como estão impressos."
         )
-    return extrair_estruturado(SCHEMA_EXTRACAO[tipo], instrucoes, texto)
+    modelo = config.MODELO_FORTE if erro else None
+    return extrair_estruturado(SCHEMA_EXTRACAO[tipo], instrucoes, texto, modelo)
 
 
 if __name__ == "__main__":
