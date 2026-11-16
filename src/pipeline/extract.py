@@ -1,0 +1,1 @@
+"""Extração estruturada por tipo."""
