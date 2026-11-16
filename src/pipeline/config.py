@@ -1,1 +1,27 @@
-"""Caminhos, modelo, temperatura e limiares."""
+"""Configuração central: caminhos, modelo e parâmetros."""
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+RAIZ = Path(__file__).resolve().parents[2]
+PROMPTS_DIR = Path(__file__).resolve().parent / "prompts"
+
+MODELO = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")
+PROJETO_GCP = os.getenv("GOOGLE_CLOUD_PROJECT")
+LOCAL_GCP = os.getenv("GOOGLE_CLOUD_LOCATION", "global")
+USAR_VERTEX = bool(PROJETO_GCP)
+TEMPERATURA = 0.0
+MAX_RETRIES = 2
+TIMEOUT_S = 60
+
+# Trecho do texto que a classificação (regras e LLM) considera
+CABECALHO_REGRAS = 400
+TRECHO_CLASSIFICACAO = 3000
+
+
+def carregar_prompt(nome: str) -> str:
+    """Lê um prompt de src/pipeline/prompts/<nome>.md."""
+    return (PROMPTS_DIR / f"{nome}.md").read_text(encoding="utf-8").strip()
