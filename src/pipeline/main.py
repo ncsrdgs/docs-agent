@@ -13,6 +13,7 @@ from pathlib import Path
 import pytesseract
 
 from pipeline.graph import processar
+from pipeline.llm import ErroConfiguracao
 from pipeline.models import Registro
 from pipeline.persist import gravar
 from pipeline.repositorio import RepositorioSqlite
@@ -26,7 +27,7 @@ def main() -> None:
     ap.add_argument("--sqlite", help="grava também em um banco SQLite (upsert por hash do arquivo)")
     args = ap.parse_args()
 
-    pdfs = sorted(Path(args.entrada).glob("*.pdf"))
+    pdfs = sorted(p for p in Path(args.entrada).iterdir() if p.suffix.lower() == ".pdf")
     if not pdfs:
         sys.exit(f"nenhum PDF encontrado em {args.entrada}")
 
@@ -41,6 +42,9 @@ def main() -> None:
             except pytesseract.TesseractNotFoundError:
                 pool.shutdown(wait=False, cancel_futures=True)
                 sys.exit("Tesseract não encontrado: instale-o ou defina TESSERACT_CMD no .env")
+            except ErroConfiguracao as e:
+                pool.shutdown(wait=False, cancel_futures=True)
+                sys.exit(f"configuração do modelo: {e}")
             except Exception as e:
                 r = Registro(arquivo=p.name, status="failed", motivo=f"erro inesperado: {e}")
             registros.append(r)

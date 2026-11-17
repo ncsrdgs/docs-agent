@@ -64,3 +64,25 @@ def test_arquivo_corrompido_refaz_a_chamada(modelo, tmp_path):
         arq.write_text("{ quebrado", encoding="utf-8")
     llm.extrair_estruturado(RelatorioExtraido, "instr", "texto")
     assert modelo.chamadas == 2
+
+
+def test_credencial_ausente_vira_erro_de_configuracao(monkeypatch, tmp_path):
+    def sem_credencial(_nome):
+        raise ValueError("API key required")
+
+    monkeypatch.setattr(llm, "_modelo", sem_credencial)
+    monkeypatch.setenv("LLM_CACHE_DIR", str(tmp_path))
+    monkeypatch.delenv("LLM_CACHE", raising=False)
+    with pytest.raises(llm.ErroConfiguracao, match="API key required"):
+        llm.extrair_estruturado(RelatorioExtraido, "instr", "texto")
+
+
+def test_resposta_em_cache_dispensa_credencial(modelo, monkeypatch):
+    llm.extrair_estruturado(RelatorioExtraido, "instr", "texto")  # grava no cache
+
+    def sem_credencial(_nome):
+        raise ValueError("API key required")
+
+    monkeypatch.setattr(llm, "_modelo", sem_credencial)
+    obj, _ = llm.extrair_estruturado(RelatorioExtraido, "instr", "texto")  # não precisa do modelo
+    assert obj.tecnico == "Ana"

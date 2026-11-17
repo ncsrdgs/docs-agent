@@ -1,5 +1,5 @@
 {
-  "_comentario": "Gabarito transcrito manualmente a partir dos 50 PDFs, sem consultar a saída do pipeline. Campos de texto truncados no próprio documento (ex.: 'Marcos Vinícius Alme') estão como impressos. Datas dd/mm/aa interpretadas como dia/mês/ano. Valor total é o impresso no documento, mesmo quando não bate com a soma dos itens.",
+  "_comentario": "Gabarito transcrito manualmente a partir dos 50 PDFs, sem consultar a saída do pipeline. Campos de texto truncados no próprio documento (ex.: 'Marcos Vinícius Alme') estão como impressos. Datas dd/mm/aa interpretadas como dia/mês/ano. Valor total é o impresso no documento, mesmo quando não bate com a soma dos itens. Em 17/11/2026, sete campos de relatórios (002_6qvg, 005_3spn, 008_cu07, 009_jc20 e 011_x21a) foram conferidos de novo contra a imagem e corrigidos para o texto impresso.",
   "documentos": {
     "001_pjpo": {
       "tipo": "relatorio_manutencao",
@@ -76,8 +76,8 @@
       "dados": {
         "data": "2023-09-14",
         "tecnico": "Marcos Vinícius Almeida",
-        "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
-        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagens. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
+        "equipamento": "Elevador de Passagei Atlas Schindler 3300",
+        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
         "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
       }
     },
@@ -274,7 +274,7 @@
       "dados": {
         "data": "2024-11-08",
         "tecnico": "Vanessa Cristina Borges",
-        "equipamento": "Transmissor de Pressão Yokogawa EJA530A",
+        "equipamento": "Transmissor de Press Yokogawa EJA530A",
         "problema": "Transmissor apresentando leitura com erro de 8% em relação ao manômetro padrão. Sinal de saída 4-20mA instável com oscilações de ±0.5mA. Instrumento não responde aos comandos do HART communicator.",
         "solucao": "Transmissor enviado para laboratório de calibração credenciado. Orçamento de reparo superior a 60% do valor de um equipamento novo. Recomendada a aquisição de novo transmissor. Aguardando aprovação da gerência para compra no valor de R$ 8.500,00. Instrumento provisório instalado para continuidade operacional."
       }
@@ -484,8 +484,8 @@
       "dados": {
         "data": "2023-09-14",
         "tecnico": "Marcos Vinícius Almeida",
-        "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
-        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagens. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
+        "equipamento": "Elevador de Passagei Atlas Schindler 3300",
+        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
         "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
       }
     },
@@ -561,7 +561,7 @@
         "data": "2023-09-14",
         "tecnico": "Marcos Vinícius Alme",
         "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
-        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagens. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
+        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
         "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
       }
     },
@@ -742,7 +742,7 @@
       "dados": {
         "data": "2024-05-10",
         "tecnico": "Camila Andrade Pinto",
-        "equipamento": "Gerador de Emergência Cummins C150D5",
+        "equipamento": "Gerador de Emergênci Cummins C150D5",
         "problema": "Gerador não partindo automaticamente durante teste semanal programado. Bateria de partida apresentando tensão abaixo do nominal. Último teste manual apresentou dificuldade de ignição.",
         "solucao": "Substituição do banco de baterias (2 unidades 12V 150Ah) e do carregador automático. Limpeza dos bornes e aplicação de vaselina protetora. Verificação do sistema de pré-aquecimento do bloco do motor. Realização de teste completo de transferência automática com carga real."
       }

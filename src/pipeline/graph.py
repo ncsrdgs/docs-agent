@@ -6,11 +6,14 @@ Roteamento:
 - erro de extração (campo ausente, valor    -> nova tentativa (1x) com o modelo maior
   fora do texto)                              e, se persistir, needs_review
 - anomalia do documento (somas, vigência)   -> needs_review, sem nova tentativa
+- anomalia no texto que a imagem não mostra -> needs_review (texto e imagem divergem)
 - sem pendências                            -> ok
 
 Fallback de visão: antes de fechar um documento com erro persistente ou anomalia, ele é
 relido uma vez a partir da imagem (modelo maior). O resultado só substitui o do texto
-se não tiver erros e não tiver mais anomalias que o original.
+se não tiver erros e não tiver mais anomalias que o original. A visão corrige dados, mas
+não aprova sozinha: a leitura pela imagem não tem a âncora do OCR, então, se a anomalia do
+texto some na imagem, o documento continua em revisão, com o motivo "texto e imagem divergem".
 """
 from __future__ import annotations
 
@@ -23,7 +26,7 @@ from langgraph.graph import END, START, StateGraph
 from pipeline import config
 from pipeline.classify import classificar
 from pipeline.extract import extrair, extrair_por_imagem
-from pipeline.llm import ErroLLM, Uso
+from pipeline.llm import ErroConfiguracao, ErroLLM, Uso
 from pipeline.models import Registro
 from pipeline.normalize import normalizar
 from pipeline.ocr import OcrError, imagens_do_pdf, ocr_pdf
@@ -49,6 +52,8 @@ class Estado(TypedDict, total=False):
     latencia_ms: int
     visao_tentada: bool
     visao_adotada: bool
+    divergencia: str
+    falha_llm: bool
     falha: str
     status: str
     motivo: str
@@ -82,12 +87,20 @@ def n_classificar(s: Estado) -> dict:
 
 def n_extrair(s: Estado) -> dict:
     tentativa = s.get("tentativas", 0) + 1
-    erro = "; ".join(s["erros"]) if s.get("erros") else None
+    # só erro de validação volta ao modelo como feedback; falha de chamada (429, timeout)
+    # não é algo que ele possa corrigir, então a nova tentativa repete a chamada original
+    erro = "; ".join(s["erros"]) if s.get("erros") and not s.get("falha_llm") else None
     try:
         ext, uso = extrair(s["tipo"], s["ocr"]["texto"], erro)
     except ErroLLM as e:
-        return {"tentativas": tentativa, "extraido": None, "erros": [str(e)]}
-    return {"tentativas": tentativa, "extraido": ext, "erros": [], **_soma(s, uso)}
+        return {"tentativas": tentativa, "extraido": None, "erros": [str(e)], "falha_llm": True}
+    return {
+        "tentativas": tentativa,
+        "extraido": ext,
+        "erros": [],
+        "falha_llm": False,
+        **_soma(s, uso),
+    }
 
 
 def n_validar(s: Estado) -> dict:
@@ -106,7 +119,8 @@ def n_validar(s: Estado) -> dict:
 
 
 def n_visao(s: Estado) -> dict:
-    """Relê o documento pela imagem. Nunca piora o resultado: na dúvida, mantém o do texto."""
+    """Relê o documento pela imagem. Na dúvida, mantém os dados do texto; e, se a anomalia do
+    texto some na imagem, os dados novos ficam mas o documento segue para revisão."""
     base = {"visao_tentada": True}
     tipo = s["tipo"]
     try:
@@ -125,6 +139,14 @@ def n_visao(s: Estado) -> dict:
         return base
     if not s.get("erros") and len(v.anomalias) > len(s.get("anomalias", [])):
         return base
+    if s.get("anomalias") and not v.anomalias:
+        # Sem a âncora do OCR, nada confirma os números lidos da imagem. Se a anomalia do
+        # texto sumiu, não dá para saber se o OCR errou ou se o modelo "arrumou" a conta:
+        # os dados da imagem ficam, mas quem decide é o revisor.
+        base["divergencia"] = (
+            "texto e imagem divergem: a leitura pela imagem não reproduz a inconsistência "
+            "encontrada no texto (" + "; ".join(s["anomalias"]) + ")"
+        )
     return {
         **base,
         "visao_adotada": True,
@@ -161,6 +183,8 @@ def n_fechar(s: Estado) -> dict:
             "status": "needs_review",
             "motivo": "inconsistência no documento: " + "; ".join(s["anomalias"]),
         }
+    if s.get("divergencia"):
+        return {"status": "needs_review", "motivo": s["divergencia"]}
     return {"status": "ok"}
 
 
@@ -226,7 +250,7 @@ def processar(caminho) -> Registro:
     caminho = Path(caminho)
     try:
         s = GRAFO.invoke({"caminho": str(caminho)}, {"recursion_limit": 20})
-    except pytesseract.TesseractNotFoundError:
+    except (pytesseract.TesseractNotFoundError, ErroConfiguracao):
         raise  # problema de configuração, não do documento
     except Exception as e:
         return Registro(arquivo=caminho.name, status="failed", motivo=f"erro inesperado: {e}")

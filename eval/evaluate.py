@@ -6,8 +6,9 @@ Uso:
 Duas métricas por campo:
 - exata: números com tolerância de 0,01, datas em ISO, CNPJ/CPF só dígitos e textos
   iguais depois de remover acento, caixa e espaços repetidos;
-- tolerante: como a exata, mas textos aceitam similaridade >= 0,95 (nomes, equipamento)
-  ou >= 0,90 (textos longos: objeto, problema, solução).
+- tolerante: como a exata, mas só os textos longos (objeto, problema, solução) aceitam
+  similaridade >= 0,90. Nomes de pessoas e empresas, equipamentos e descrições de itens
+  exigem igualdade: um caractere trocado em um nome é um erro, não uma variação de grafia.
 """
 from __future__ import annotations
 
@@ -19,7 +20,6 @@ from collections import defaultdict
 from difflib import SequenceMatcher
 from pathlib import Path
 
-LIMIAR_NOME = 0.95
 LIMIAR_TEXTO = 0.90
 TEXTOS_LONGOS = {"objeto", "problema", "solucao"}
 TOL = 0.01
@@ -53,8 +53,9 @@ def comparar(campo: str, esperado, obtido) -> tuple[bool, bool]:
         ok = str(esperado) == str(obtido)
         return ok, ok
     exato = _norm(str(esperado)) == _norm(str(obtido))
-    limiar = LIMIAR_TEXTO if campo in TEXTOS_LONGOS else LIMIAR_NOME
-    return exato, exato or _sim(str(esperado), str(obtido)) >= limiar
+    if campo not in TEXTOS_LONGOS:
+        return exato, exato
+    return exato, exato or _sim(str(esperado), str(obtido)) >= LIMIAR_TEXTO
 
 
 def achatar(dados: dict | None) -> dict[str, tuple]:
@@ -135,8 +136,10 @@ def main() -> None:
     todos_ex = [v for lst in exato.values() for v in lst]
     todos_tol = [v for lst in toler.values() for v in lst]
     perfeitos = [s for s, e in erros_doc.items() if not e]
+    distintos = len({json.dumps(e["dados"], sort_keys=True, ensure_ascii=False) for e in gold.values()})
 
-    print(f"Gabarito: {n} documentos | {len(todos_tol)} campos comparados")
+    print(f"Gabarito: {n} documentos ({distintos} registros distintos) | "
+          f"{len(todos_tol)} campos comparados")
     print(f"Classificação correta: {tipo_certo}/{n}")
     print(f"Acurácia por campo: exata {sum(todos_ex)/len(todos_ex):.1%} | "
           f"tolerante {sum(todos_tol)/len(todos_tol):.1%}")
