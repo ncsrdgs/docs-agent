@@ -135,6 +135,9 @@ class Registro(BaseModel):
 
     ocr_conf_media: float | None = None
     ocr_conf_min: float | None = None
+    paginas: int | None = None
+    ocr_ms: int | None = None
+    tesseract: str | None = None
     modelo: str | None = None
     tokens_in: int = 0
     tokens_out: int = 0

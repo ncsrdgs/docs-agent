@@ -9,12 +9,18 @@
     "nota_fiscal": 17,
     "contrato": 17
   },
-  "com_nova_tentativa": 14,
-  "tokens_in": 69304,
-  "tokens_out": 31313,
-  "tokens_in_medio_por_documento": 1386,
-  "latencia_llm_media_ms": 4559,
+  "com_nova_tentativa": 15,
+  "tokens_in": 71196,
+  "tokens_out": 33165,
+  "tokens_in_medio_por_documento": 1424,
+  "tokens_out_medio_por_documento": 663,
+  "latencia_llm_media_ms": 0,
   "ocr_conf_media": 90.0,
+  "ocr_ms_medio_por_documento": 1429,
+  "ocr_paginas_por_segundo": 0.7,
+  "tesseract": [
+    "5.4.0.20240606"
+  ],
   "pendentes": [
     {
       "arquivo": "001_rljd.pdf",

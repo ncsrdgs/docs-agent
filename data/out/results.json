@@ -15,10 +15,13 @@
     },
     "ocr_conf_media": 91.2,
     "ocr_conf_min": 63.0,
+    "paginas": 1,
+    "ocr_ms": 1716,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 1552,
     "tokens_out": 1396,
-    "latencia_ms": 11510,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -70,10 +73,13 @@
     },
     "ocr_conf_media": 87.0,
     "ocr_conf_min": 47.0,
+    "paginas": 1,
+    "ocr_ms": 1371,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2653,
     "tokens_out": 1601,
-    "latencia_ms": 16408,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -104,10 +110,13 @@
     },
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 89.0,
+    "paginas": 1,
+    "ocr_ms": 2075,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1117,
     "tokens_out": 218,
-    "latencia_ms": 2522,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -126,10 +135,13 @@
     },
     "ocr_conf_media": 89.3,
     "ocr_conf_min": 0.0,
+    "paginas": 1,
+    "ocr_ms": 1638,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 745,
     "tokens_out": 168,
-    "latencia_ms": 2691,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -160,10 +172,13 @@
     },
     "ocr_conf_media": 91.3,
     "ocr_conf_min": 81.0,
+    "paginas": 1,
+    "ocr_ms": 1398,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1052,
     "tokens_out": 220,
-    "latencia_ms": 1964,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -209,10 +224,13 @@
     },
     "ocr_conf_media": 86.5,
     "ocr_conf_min": 41.0,
+    "paginas": 1,
+    "ocr_ms": 1059,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1264,
     "tokens_out": 351,
-    "latencia_ms": 2097,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -258,10 +276,13 @@
     },
     "ocr_conf_media": 89.2,
     "ocr_conf_min": 57.0,
+    "paginas": 1,
+    "ocr_ms": 1194,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1291,
     "tokens_out": 357,
-    "latencia_ms": 2491,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -292,10 +313,13 @@
     },
     "ocr_conf_media": 90.6,
     "ocr_conf_min": 22.0,
+    "paginas": 1,
+    "ocr_ms": 1949,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1191,
     "tokens_out": 245,
-    "latencia_ms": 1514,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -314,10 +338,13 @@
     },
     "ocr_conf_media": 91.1,
     "ocr_conf_min": 63.0,
+    "paginas": 1,
+    "ocr_ms": 1508,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 1552,
-    "tokens_out": 1389,
-    "latencia_ms": 7329,
+    "tokens_out": 1315,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -369,10 +396,13 @@
     },
     "ocr_conf_media": 89.8,
     "ocr_conf_min": 71.0,
+    "paginas": 1,
+    "ocr_ms": 1162,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
-    "tokens_in": 2641,
-    "tokens_out": 2230,
-    "latencia_ms": 7329,
+    "tokens_in": 2669,
+    "tokens_out": 2226,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -391,10 +421,13 @@
     },
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 86.0,
+    "paginas": 1,
+    "ocr_ms": 1508,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 732,
     "tokens_out": 148,
-    "latencia_ms": 1419,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -425,10 +458,13 @@
     },
     "ocr_conf_media": 91.5,
     "ocr_conf_min": 88.0,
+    "paginas": 1,
+    "ocr_ms": 1267,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 997,
     "tokens_out": 236,
-    "latencia_ms": 1455,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -441,16 +477,19 @@
     "dados": {
       "data": "2024-11-08",
       "tecnico": "Vanessa Cristina Borges",
-      "equipamento": "Transmissor de Pressão Yokogava EJASSOA",
+      "equipamento": "Transmissor de Press Yokogava EJASSOA",
       "problema": "Transmissor apresentando leitura com erro de 8% em relação ao manômetro padrão. Sinal de saída 4-20mA instável com oscilações de +0.5mA. Instrumento não responde aos comandos do HART communicator.",
       "solucao": "Transmissor enviado para laboratório de calibração credenciado. Orçamento de reparo superior a 60% do valor de um equipamento novo. Recomendada a aquisição de novo transmissor. Aguardando aprovação da gerência para compra no valor de R$ 8.500,00. Instrumento provisório instalado para continuidade operacional."
     },
     "ocr_conf_media": 89.7,
     "ocr_conf_min": 0.0,
+    "paginas": 1,
+    "ocr_ms": 1415,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 772,
-    "tokens_out": 196,
-    "latencia_ms": 1822,
+    "tokens_out": 195,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -502,10 +541,13 @@
     },
     "ocr_conf_media": 86.5,
     "ocr_conf_min": 27.0,
+    "paginas": 1,
+    "ocr_ms": 1027,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2585,
-    "tokens_out": 1960,
-    "latencia_ms": 51155,
+    "tokens_out": 1946,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -536,10 +578,13 @@
     },
     "ocr_conf_media": 91.3,
     "ocr_conf_min": 76.0,
+    "paginas": 1,
+    "ocr_ms": 1850,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1154,
-    "tokens_out": 227,
-    "latencia_ms": 1712,
+    "tokens_out": 229,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -558,10 +603,13 @@
     },
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 85.0,
+    "paginas": 1,
+    "ocr_ms": 1375,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 731,
     "tokens_out": 150,
-    "latencia_ms": 1628,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -607,10 +655,13 @@
     },
     "ocr_conf_media": 87.5,
     "ocr_conf_min": 1.0,
+    "paginas": 1,
+    "ocr_ms": 975,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2572,
-    "tokens_out": 1859,
-    "latencia_ms": 7533,
+    "tokens_out": 1866,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -641,10 +692,13 @@
     },
     "ocr_conf_media": 91.7,
     "ocr_conf_min": 89.0,
+    "paginas": 1,
+    "ocr_ms": 1571,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1121,
     "tokens_out": 216,
-    "latencia_ms": 1530,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -702,10 +756,13 @@
     },
     "ocr_conf_media": 87.4,
     "ocr_conf_min": 36.0,
+    "paginas": 1,
+    "ocr_ms": 1337,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1359,
     "tokens_out": 468,
-    "latencia_ms": 2098,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -724,10 +781,13 @@
     },
     "ocr_conf_media": 90.9,
     "ocr_conf_min": 68.0,
+    "paginas": 1,
+    "ocr_ms": 1402,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 731,
     "tokens_out": 149,
-    "latencia_ms": 1547,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -758,10 +818,13 @@
     },
     "ocr_conf_media": 90.9,
     "ocr_conf_min": 62.0,
+    "paginas": 1,
+    "ocr_ms": 1544,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1069,
     "tokens_out": 233,
-    "latencia_ms": 1407,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -780,10 +843,13 @@
     },
     "ocr_conf_media": 90.0,
     "ocr_conf_min": 0.0,
+    "paginas": 1,
+    "ocr_ms": 1420,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 742,
     "tokens_out": 168,
-    "latencia_ms": 1416,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -814,10 +880,13 @@
     },
     "ocr_conf_media": 91.5,
     "ocr_conf_min": 83.0,
+    "paginas": 1,
+    "ocr_ms": 1228,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 980,
     "tokens_out": 221,
-    "latencia_ms": 1599,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -875,10 +944,13 @@
     },
     "ocr_conf_media": 87.8,
     "ocr_conf_min": 41.0,
+    "paginas": 1,
+    "ocr_ms": 1398,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1358,
     "tokens_out": 497,
-    "latencia_ms": 1978,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -897,10 +969,13 @@
     },
     "ocr_conf_media": 91.4,
     "ocr_conf_min": 63.0,
+    "paginas": 1,
+    "ocr_ms": 1484,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 780,
     "tokens_out": 167,
-    "latencia_ms": 1403,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -946,10 +1021,13 @@
     },
     "ocr_conf_media": 89.8,
     "ocr_conf_min": 57.0,
+    "paginas": 1,
+    "ocr_ms": 1183,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1285,
     "tokens_out": 346,
-    "latencia_ms": 1778,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -980,10 +1058,13 @@
     },
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 89.0,
+    "paginas": 1,
+    "ocr_ms": 1711,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1117,
     "tokens_out": 218,
-    "latencia_ms": 1549,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1002,11 +1083,14 @@
     },
     "ocr_conf_media": 91.3,
     "ocr_conf_min": 63.0,
-    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
-    "tokens_in": 1588,
-    "tokens_out": 1340,
-    "latencia_ms": 6836,
-    "tentativas": 2
+    "paginas": 1,
+    "ocr_ms": 1472,
+    "tesseract": "5.4.0.20240606",
+    "modelo": "gemini-3.5-flash-lite",
+    "tokens_in": 776,
+    "tokens_out": 167,
+    "latencia_ms": 0,
+    "tentativas": 1
   },
   {
     "arquivo": "010_rt7s.pdf",
@@ -1051,10 +1135,13 @@
     },
     "ocr_conf_media": 88.8,
     "ocr_conf_min": 69.0,
+    "paginas": 1,
+    "ocr_ms": 1099,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2572,
-    "tokens_out": 1536,
-    "latencia_ms": 7060,
+    "tokens_out": 1533,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -1085,10 +1172,13 @@
     },
     "ocr_conf_media": 91.5,
     "ocr_conf_min": 85.0,
+    "paginas": 1,
+    "ocr_ms": 1642,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1114,
     "tokens_out": 215,
-    "latencia_ms": 2277,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1119,10 +1209,13 @@
     },
     "ocr_conf_media": 90.7,
     "ocr_conf_min": 22.0,
+    "paginas": 1,
+    "ocr_ms": 1928,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1180,
     "tokens_out": 234,
-    "latencia_ms": 1617,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1168,10 +1261,13 @@
     },
     "ocr_conf_media": 89.0,
     "ocr_conf_min": 70.0,
+    "paginas": 1,
+    "ocr_ms": 1180,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
-    "tokens_in": 2568,
-    "tokens_out": 1337,
-    "latencia_ms": 6104,
+    "tokens_in": 2556,
+    "tokens_out": 1012,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -1190,10 +1286,13 @@
     },
     "ocr_conf_media": 89.7,
     "ocr_conf_min": 0.0,
+    "paginas": 1,
+    "ocr_ms": 1349,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 740,
     "tokens_out": 168,
-    "latencia_ms": 1478,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1224,10 +1323,13 @@
     },
     "ocr_conf_media": 90.4,
     "ocr_conf_min": 21.0,
+    "paginas": 1,
+    "ocr_ms": 1853,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1156,
     "tokens_out": 231,
-    "latencia_ms": 1668,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1246,10 +1348,13 @@
     },
     "ocr_conf_media": 92.1,
     "ocr_conf_min": 89.0,
+    "paginas": 1,
+    "ocr_ms": 1434,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 762,
     "tokens_out": 189,
-    "latencia_ms": 1437,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1301,10 +1406,13 @@
     },
     "ocr_conf_media": 87.4,
     "ocr_conf_min": 60.0,
+    "paginas": 1,
+    "ocr_ms": 1084,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2685,
     "tokens_out": 1773,
-    "latencia_ms": 7225,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -1317,7 +1425,7 @@
       "cnpj: dígito verificador de CNPJ inválido (informativo)"
     ],
     "dados": {
-      "fornecedor": "Auto Peças Velocidade Tot",
+      "fornecedor": "Auto Peças Velocidade",
       "cnpj": "67.890.123/0001-45",
       "data": "2024-01-25",
       "itens": [
@@ -1350,11 +1458,14 @@
     },
     "ocr_conf_media": 88.6,
     "ocr_conf_min": 54.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 1253,
-    "tokens_out": 341,
-    "latencia_ms": 1849,
-    "tentativas": 1
+    "paginas": 1,
+    "ocr_ms": 1115,
+    "tesseract": "5.4.0.20240606",
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 2550,
+    "tokens_out": 2704,
+    "latencia_ms": 0,
+    "tentativas": 2
   },
   {
     "arquivo": "013_mexy.pdf",
@@ -1372,10 +1483,13 @@
     },
     "ocr_conf_media": 91.8,
     "ocr_conf_min": 89.0,
+    "paginas": 1,
+    "ocr_ms": 1555,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 738,
     "tokens_out": 162,
-    "latencia_ms": 1716,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1406,10 +1520,13 @@
     },
     "ocr_conf_media": 91.7,
     "ocr_conf_min": 88.0,
+    "paginas": 1,
+    "ocr_ms": 1261,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 977,
     "tokens_out": 218,
-    "latencia_ms": 1502,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1428,10 +1545,13 @@
     },
     "ocr_conf_media": 89.6,
     "ocr_conf_min": 0.0,
+    "paginas": 1,
+    "ocr_ms": 1353,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 740,
     "tokens_out": 167,
-    "latencia_ms": 1411,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1462,10 +1582,13 @@
     },
     "ocr_conf_media": 90.7,
     "ocr_conf_min": 22.0,
+    "paginas": 1,
+    "ocr_ms": 1979,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1179,
-    "tokens_out": 238,
-    "latencia_ms": 1494,
+    "tokens_out": 239,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1524,10 +1647,13 @@
     },
     "ocr_conf_media": 83.4,
     "ocr_conf_min": 20.0,
+    "paginas": 1,
+    "ocr_ms": 1156,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
-    "tokens_in": 2688,
-    "tokens_out": 2616,
-    "latencia_ms": 11060,
+    "tokens_in": 2726,
+    "tokens_out": 2085,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -1573,11 +1699,14 @@
     },
     "ocr_conf_media": 88.4,
     "ocr_conf_min": 15.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 1297,
-    "tokens_out": 341,
-    "latencia_ms": 1923,
-    "tentativas": 1
+    "paginas": 1,
+    "ocr_ms": 1195,
+    "tesseract": "5.4.0.20240606",
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 2650,
+    "tokens_out": 1208,
+    "latencia_ms": 0,
+    "tentativas": 2
   },
   {
     "arquivo": "015_h44t.pdf",
@@ -1607,10 +1736,13 @@
     },
     "ocr_conf_media": 91.2,
     "ocr_conf_min": 52.0,
+    "paginas": 1,
+    "ocr_ms": 1455,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1064,
     "tokens_out": 229,
-    "latencia_ms": 1447,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1629,10 +1761,13 @@
     },
     "ocr_conf_media": 91.5,
     "ocr_conf_min": 84.0,
+    "paginas": 1,
+    "ocr_ms": 1357,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 741,
     "tokens_out": 157,
-    "latencia_ms": 2366,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1651,10 +1786,13 @@
     },
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 43.0,
+    "paginas": 1,
+    "ocr_ms": 1428,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 1582,
     "tokens_out": 1100,
-    "latencia_ms": 4997,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -1685,10 +1823,13 @@
     },
     "ocr_conf_media": 90.9,
     "ocr_conf_min": 26.0,
+    "paginas": 1,
+    "ocr_ms": 1927,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1196,
     "tokens_out": 233,
-    "latencia_ms": 1478,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1740,10 +1881,13 @@
     },
     "ocr_conf_media": 90.4,
     "ocr_conf_min": 74.0,
+    "paginas": 1,
+    "ocr_ms": 1101,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2641,
-    "tokens_out": 1372,
-    "latencia_ms": 14216,
+    "tokens_out": 2111,
+    "latencia_ms": 0,
     "tentativas": 2
   },
   {
@@ -1774,10 +1918,13 @@
     },
     "ocr_conf_media": 91.5,
     "ocr_conf_min": 67.0,
+    "paginas": 1,
+    "ocr_ms": 1665,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1134,
     "tokens_out": 225,
-    "latencia_ms": 1481,
+    "latencia_ms": 0,
     "tentativas": 1
   },
   {
@@ -1823,10 +1970,13 @@
     },
     "ocr_conf_media": 89.9,
     "ocr_conf_min": 73.0,
+    "paginas": 1,
+    "ocr_ms": 1099,
+    "tesseract": "5.4.0.20240606",
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2566,
-    "tokens_out": 1257,
-    "latencia_ms": 6422,
+    "tokens_out": 1255,
+    "latencia_ms": 0,
     "tentativas": 2
   }
 ]

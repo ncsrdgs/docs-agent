@@ -15,6 +15,7 @@ import pytesseract
 from pipeline.graph import processar
 from pipeline.models import Registro
 from pipeline.persist import gravar
+from pipeline.repositorio import RepositorioSqlite
 
 
 def main() -> None:
@@ -22,6 +23,7 @@ def main() -> None:
     ap.add_argument("--entrada", default="data/raw", help="pasta com os PDFs")
     ap.add_argument("--saida", default="data/out", help="pasta dos resultados")
     ap.add_argument("--workers", type=int, default=4, help="documentos em paralelo")
+    ap.add_argument("--sqlite", help="grava também em um banco SQLite (upsert por hash do arquivo)")
     args = ap.parse_args()
 
     pdfs = sorted(Path(args.entrada).glob("*.pdf"))
@@ -46,6 +48,9 @@ def main() -> None:
 
     registros.sort(key=lambda r: r.arquivo)
     resumo = gravar(registros, Path(args.saida))
+    if args.sqlite:
+        RepositorioSqlite(args.sqlite).salvar(registros)
+        print(f"banco: {args.sqlite}")
     segundos = time.perf_counter() - inicio
 
     print(f"\n{resumo['total']} documentos em {segundos:.0f}s -> {args.saida}/")
@@ -55,6 +60,18 @@ def main() -> None:
         f"nova tentativa: {resumo['com_nova_tentativa']} | "
         f"tokens: {resumo['tokens_in']} entrada, {resumo['tokens_out']} saída"
     )
+
+    if resumo["ocr_ms_medio_por_documento"] is not None:
+        print(
+            f"OCR: {resumo['ocr_ms_medio_por_documento']} ms por documento, "
+            f"{resumo['ocr_paginas_por_segundo']} páginas/s por worker "
+            f"(Tesseract {', '.join(resumo['tesseract'])})"
+        )
+    if "custo_estimado_usd" in resumo:
+        print(
+            f"custo estimado: US$ {resumo['custo_estimado_usd']} "
+            f"(US$ {resumo['custo_medio_por_documento_usd']} por documento)"
+        )
 
 
 if __name__ == "__main__":
