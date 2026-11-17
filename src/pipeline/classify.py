@@ -43,9 +43,12 @@ def classificar_por_regras(texto: str) -> str | None:
     return tipos.pop() if len(tipos) == 1 else None
 
 
-def classificar(texto: str) -> tuple[Classificacao, Uso, str]:
-    """Devolve (classificação, uso do LLM, método: 'regra' ou 'llm')."""
-    tipo = classificar_por_regras(texto)
+def classificar(texto: str, usar_regras: bool = True) -> tuple[Classificacao, Uso, str]:
+    """Devolve (classificação, uso do LLM, método: 'regra' ou 'llm').
+
+    Com usar_regras=False vai direto ao LLM (usado para medir o fallback).
+    """
+    tipo = classificar_por_regras(texto) if usar_regras else None
     if tipo:
         return Classificacao(tipo=tipo, confianca=1.0), Uso(), "regra"
 
