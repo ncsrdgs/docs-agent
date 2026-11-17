@@ -1,0 +1,10 @@
+{
+  "arquivo": "014_1740.pdf",
+  "sha256": "d54052cc00bfc97d50eebf5639bcde84889972ab22b3eda66831c1ffc497f1a4",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nORDEM DE SERVIÇO\n\nOS Nº 41832\n\nM Realizado em 15 de março de 2023\n\n[64] Profissional Carlos Eduardo Silva (234521)\n[64] Ativo Torno CNC - Romi GL 240\n\nDefeito Encontrado\nEquipamento apresentando vibração excessiva durante operação em alta rotação. Operador relatou ruído anormal proveniente do cabeçote principal.\n\nPeças usinadas apresentando acabamento fora do padrão de qualidade.\n\nReparo Efetuado\nRealizada substituição completa dos rolamentos do eixo principal (2 unidades SKF 6308). Efetuado realinhamento do cabeçote utilizando relógio\n\ncomparador. Lubrificação geral do sistema e teste de funcionamento por 2 horas em diferentes rotações.\n\nSituação: Concluído",
+  "conf_media": 89.6,
+  "conf_min": 0.0,
+  "ocr_ms": 1353,
+  "tesseract": "5.4.0.20240606"
+}

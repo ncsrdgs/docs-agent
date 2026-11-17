@@ -1,0 +1,10 @@
+{
+  "arquivo": "015_zu5g.pdf",
+  "sha256": "77531a19273932e69bf9157b5fe021713de3796fda3ed3cd744ea51f570ab834",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nRelatório Técnico\nData: 22-05-2023\n\nNome do Técnico\nRoberto Mendes Oliveira - Refrigeração e Climatização (Mat. 187432)\n\nIdentificação do Equipamento\n\nTipo: Chiller\n\nModelo: Carrier 30XA-0802\nPatrimônio: CLI-2018-0089\n\nLocal: Casa de Máquinas - Subsolo\n\nDiagnóstico\n\nVazamento de gás refrigerante R-410A no circuito primário e filtro secador obstruído\n\nAção Corretiva\n\nLocalizado vazamento na conexão da válvula de expansão através de teste com nitrogênio e detector eletrônico. Realizado reparo\ncom solda prata e substituição do filtro secador. Efetuada carga completa de gás R-410A (8kg) e teste de estanqueidade por 24\nhoras.",
+  "conf_media": 91.5,
+  "conf_min": 84.0,
+  "ocr_ms": 1357,
+  "tesseract": "5.4.0.20240606"
+}

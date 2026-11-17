@@ -1,0 +1,10 @@
+{
+  "arquivo": "001_rljd.pdf",
+  "sha256": "6a329db694779230dd25c06a3ae912c40a1ffbefa91530add0f3fe5035371be6",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFATURA\n\nEmitido em: 15/03/23\n\nTech Solutions Ltda\nDocumento: 12.345.678/0001-90\n\nProdutos\n\n- Notebook Dell Inspiron 15\n\n- Mouse sem fio Logitech M280\n\n- Teclado mecânico Redragon Kumara\n- Monitor LG 24 polegadas Full HD\n\n- Cabo HDMI 2.0 1,8m\n\n5 x R$ 3899,99\n10 x R$89,90\n8 x R$ 249,00\n5 x 899,00\n\n15 x R$29,90\n\nBRL 19.499,95\nR$ 899,00\n\nR$ 1992,00\nBRL 4.495,00\nBRL 448,50\n\nTotal Geral\n\nR$ 25791,45",
+  "conf_media": 87.0,
+  "conf_min": 47.0,
+  "ocr_ms": 1371,
+  "tesseract": "5.4.0.20240606"
+}

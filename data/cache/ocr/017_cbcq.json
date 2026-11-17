@@ -1,0 +1,10 @@
+{
+  "arquivo": "017_cbcq.pdf",
+  "sha256": "6645ae6d27e9876a479ccd66a5ec7f5c1c404ed3354d511c71647c60ec7c2e0f",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFATURA\n\nEmitido em: 15/07/2024\n\nConsultoria Empresarial Sucesso Total S.A.\nDocumento: 22.333.444/000155\n\nProdutos\n\n- Consultoria financeira mensal 3 x R$4.500,00 R$13.500,00\n- Análise de viabilidade econômica 1 x R$ 8000,00 8.000,00\n- Treinamento equipe comercial 8h 2xR$2500,00 R$ 5000,00\n- Elaboração plano de negócios 1 x R$6.500,00 6.500,00\n\nTotal Geral R$ 35000,00",
+  "conf_media": 89.9,
+  "conf_min": 73.0,
+  "ocr_ms": 1099,
+  "tesseract": "5.4.0.20240606"
+}

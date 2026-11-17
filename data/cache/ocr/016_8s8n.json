@@ -1,0 +1,10 @@
+{
+  "arquivo": "016_8s8n.pdf",
+  "sha256": "c4418a8ba4b8aa3b152389ac8fc8044246861120f55c17cc13356f8fe390d914",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFICHA DE SERVIÇO\n\nDt. Execução\n\n2024-11-08\n\nPatrimônio INS-2020-0067\n\nColaborador\n\nVanessa Cristina Bor - 267123\n\nEquipamento: Transmissor de Pressão | Modelo: Yokogawa EJASSOA | Local: Área de Utilidades - Vapor\n\nOcorrência\n\nTransmissor apresentando leitura com erro de 8% em relação ao manômetro padrão. Sinal de saída 4-20mA instável com oscilações de +0.5mA.\n\nInstrumento não responde aos comandos do HART communicator.\n\nProcedimento Adotado\n\nTransmissor enviado para laboratório de calibração credenciado. Orçamento de reparo superior a 60% do valor de um equipamento novo.\n\nRecomendada a aquisição de novo transmissor. Aguardando aprovação da gerência para compra no valor de R$ 8.500,00. Instrumento provisório\n\ninstalado para continuidade operacional.",
+  "conf_media": 91.6,
+  "conf_min": 43.0,
+  "ocr_ms": 1428,
+  "tesseract": "5.4.0.20240606"
+}

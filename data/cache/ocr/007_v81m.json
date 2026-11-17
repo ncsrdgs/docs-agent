@@ -1,0 +1,10 @@
+{
+  "arquivo": "007_v81m.pdf",
+  "sha256": "f42550e2515e6fc5871de417f349aea708c2d307a7182f706432a458ce172e4f",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nRelatório Técnico\nData: 05.10.2023\n\nNome do Técnico\n\nAna Paula Rodrigues - Hidráulica e Pneumática (Mat. 267891)\n\nIdentificação do Equipamento\n\nTipo: Compressor de Ar\nModelo: Atlas Copco GA37\nPatrimônio: PNE-2016-0012\nLocal: Casa de Compressores\n\nDiagnóstico\n\nRadiador de óleo obstruído por sujeira externa e elemento separador de óleo saturado\n\nAção Corretiva\n\nDesmontagem e limpeza química do radiador de óleo com produto desengraxante industrial. Substituição do elemento separador de\nóleo e filtro de ar de admissão. Troca completa do óleo lubrificante (15 litros) por óleo sintético especificado. Ajuste dos parâmetros\nde operação no controlador Elektronikon.",
+  "conf_media": 90.9,
+  "conf_min": 68.0,
+  "ocr_ms": 1402,
+  "tesseract": "5.4.0.20240606"
+}

@@ -1,0 +1,10 @@
+{
+  "arquivo": "017_2mm9.pdf",
+  "sha256": "369c13ba933a6cd81a5c160f5f92184b877f96406f969a5efa2db6fd8661d82b",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nCONTRATO DE PRESTAÇÃO DE SERVIÇOS\n\nCONTRATANTE\n\nAna Paula Ribeiro Costa MEI, inscrito no CNPJ/CPF sob o nº 01234987000110, com sede em Rua XV de Novembro, 1234, Sala 12,\nCentro, Curitiba - PR, CEP 80020-310.\n\nCONTRATADA\n\nWebDev Curitiba Desenvolvimento de Software Ltda, inscrito no CNPJ/CPF sob o nº 12.345.876/0001-21, com sede em Av. Sete de\nSetembro, 4698, Batel, Curitiba - PR, CEP 80240-000.\n\nCLÁUSULA PRIMEIRA - DO OBJETO\n\nPrestação de serviços de desenvolvimento de loja virtual (e-commerce) personalizada, incluindo design responsivo, integração com\nmeios de pagamento (PIX, cartões e boleto), integração com Correios e transportadoras, painel administrativo, e hospedagem por 12\nmeses.\n\nCLÁUSULA SEGUNDA - DA VIGÊNCIA\nO presente contrato terá vigência de 01-03-2024 a 30 de junho de 2024.\n\nCLÁUSULA TERCEIRA - DO VALOR\nValor Mensal: R$ 3200,00",
+  "conf_media": 91.5,
+  "conf_min": 67.0,
+  "ocr_ms": 1665,
+  "tesseract": "5.4.0.20240606"
+}

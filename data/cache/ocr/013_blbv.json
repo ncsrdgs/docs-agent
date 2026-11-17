@@ -1,0 +1,10 @@
+{
+  "arquivo": "013_blbv.pdf",
+  "sha256": "61d7dfdada4602a7f70a22e5d94cd9920b5bf97dc9fd0993eab6da5dd12f68f6",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nNF-e Razão Social: Auto Peças Velocidade Tot Inscrição: 67890123000145 Dt. 25/01/24\n\nDesc. ot V.Un. V.Tot.\n\nÓleo motor 5W30 sintético 1L 24 R$ 45,90 R$1.101,60\n\nFiltro de óleo 12 R$35,00 R$420,00\n\nPastilha de freio dianteira jogo 8 R$189,90 BRL 1.519,20\n\nAmortecedor dianteiro par 4 420,00 R$ 1.680,00\nMontante BRL 4.658,00",
+  "conf_media": 88.6,
+  "conf_min": 54.0,
+  "ocr_ms": 1115,
+  "tesseract": "5.4.0.20240606"
+}

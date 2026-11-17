@@ -1,0 +1,10 @@
+{
+  "arquivo": "015_h44t.pdf",
+  "sha256": "63d9b954ffe1672548a9b242b732da6db59d8e29605ed86eb64a2ab04dc48e10",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nACORDO DE SERVIÇOS\n\nParte A Parte B\n\nAna Paula Ribeiro Costa MEI WebbDev Curitiba Desenvolvimento de Software Ltda\n01.234.987/0001-10 12.345.876/0001-21\n\nRua XV de Novembro, 1234, Sala 12, Centro, Curitiba - Av. Sete de Setembro, 4698, Batel, Curitiba - PR, CEP\nPR, CEP 80020-310 80240-000\n\nServiços\n\nPrestação de serviços de desenvolvimento de loja virtual (e-commerce) personalizada, incluindo design responsivo, integração com\nmeios de pagamento (PIX, cartões e boleto), integração com Correios e transportadoras, painel administrativo, e hospedagem por 12\nmeses.\n\nPeríodo de Contrato Remuneração\n\n01/03/24 - 30 de junho de 2024 R$ 3.200,00 /mês",
+  "conf_media": 91.2,
+  "conf_min": 52.0,
+  "ocr_ms": 1455,
+  "tesseract": "5.4.0.20240606"
+}

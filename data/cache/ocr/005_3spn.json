@@ -1,0 +1,10 @@
+{
+  "arquivo": "005_3spn.pdf",
+  "sha256": "01979d79417fa4f12280c2b579cbd35fd5b3270c395a5eb86b5823ac8f9bebfa",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nORDEM DE SERVIÇO\n\nOS Nº 55888\n\nM Realizado em 08-11-2024\n\n[69] Profissional Vanessa Cristina Borges (267123)\n\n[69] Ativo Transmissor de Press - Yokogava EJASSOA\n\nDefeito Encontrado\nTransmissor apresentando leitura com erro de 8% em relação ao manômetro padrão. Sinal de saída 4-20mA instável com oscilações de +0.5mA.\n\nInstrumento não responde aos comandos do HART communicator.\n\nReparo Efetuado\n\nTransmissor enviado para laboratório de calibração credenciado. Orçamento de reparo superior a 60% do valor de um equipamento novo.\nRecomendada a aquisição de novo transmissor. Aguardando aprovação da gerência para compra no valor de R$ 8.500,00. Instrumento provisório\ninstalado para continuidade operacional.\n\nSituação: Aguardando aprovação",
+  "conf_media": 89.7,
+  "conf_min": 0.0,
+  "ocr_ms": 1415,
+  "tesseract": "5.4.0.20240606"
+}

@@ -1,0 +1,10 @@
+{
+  "arquivo": "009_jc20.pdf",
+  "sha256": "b2f0d5564a9a89157eab22275f47063c59f49cebf2c1bf2feefcdd98fb185c27",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFICHA DE SERVIÇO\n\nDt. Execução\n\n14/09/23\n\nPatrimônio ELV-2017-0004\n\nColaborador\n\nMarcos Vinícius Alme - 312456\n\nEquipamento: Elevador de Passageiros | Modelo: Atlas Schindler 3300 | Local: Torre Administrativa - Hall Principal\n\nOcorrência\n\nElevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e\n\ninsegurança. Sistema indicando falha no encoder do motor.\n\nProcedimento Adotado\n\nSubstituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e\n\ninversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares.\n\nPeças/Materi:\n\n- Encoder incremental 1024 pulsos x1\n- Chicote de cabos blindados 10m x1",
+  "conf_media": 91.4,
+  "conf_min": 63.0,
+  "ocr_ms": 1484,
+  "tesseract": "5.4.0.20240606"
+}

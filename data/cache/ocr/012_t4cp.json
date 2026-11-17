@@ -1,0 +1,10 @@
+{
+  "arquivo": "012_t4cp.pdf",
+  "sha256": "92a5fd69a40495a5fbad07c1af705adb068bc8838bebaaaa8c006ed433db4efd",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFATURA\n\nEmitido em: 2023-09-05\n\nConstrutora Alicerce Forte Ltda\n\nDocumento: 45.678.901/0001-23\n\nProdutos\n\n- Cimento CP 1l 50kg\n\n- Vergalhão CA-50 10mm barra 12m\n- Tijolo cerâmico 8 furos milheiro\n\n- Areia média mº\n\n- Brita 1 mº\n\n100 x R$ 38,90\n50 x BRL 89,90\n5 x R$ 890,00\n10x R$145,00\n8 x R$ 165,00\n\nR$ 3.890,00\nR$ 4.495,00\nR$ 4450,00\nR$ 1450,00\nR$ 1.320,00\n\nTotal Geral\n\nR$ 12.605,00",
+  "conf_media": 87.4,
+  "conf_min": 60.0,
+  "ocr_ms": 1084,
+  "tesseract": "5.4.0.20240606"
+}

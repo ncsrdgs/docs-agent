@@ -1,0 +1,10 @@
+{
+  "arquivo": "008_sl0j.pdf",
+  "sha256": "3bf86d7980ae74ecb2cfcfdb5312bfca621dc58405db1b8ebd2ef052fa823d5e",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nDOCUMENTO FISCAL Nº 83236\n\nDADOS DO EMITENTE\n\nNome do Fornecedor: MedSupply Equipamentos Médicos Eireli\nCNPJ/MF: 56789012000134\n\nData: 18/11/23\n\nDescrição dos Itens\n\nProduto/Serviço Quantidade Valor Unitário Valor Item\nLuva de procedimento látex cx c/100 50 R$ 42,90 R$ 2145,00\nSeringa descartável 10ml cx c/100 30 R$ 65,00 R$ 1.950,00\nÁlcool gel 70% 5 litros 20 BRL 49,90 R$ 998,00\nMáscara cirúrgica tripla cx c/50 40 BRL 18,90 R$756,00\nEstetoscópio Littmann Classic |ll 3 689,00 R$2.067,00\nTermômetro digital infravermelho 5 159,90 R$799,50\n\nValor a Pagar 8.038,50",
+  "conf_media": 87.8,
+  "conf_min": 41.0,
+  "ocr_ms": 1398,
+  "tesseract": "5.4.0.20240606"
+}

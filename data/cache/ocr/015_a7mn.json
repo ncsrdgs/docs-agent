@@ -1,0 +1,10 @@
+{
+  "arquivo": "015_a7mn.pdf",
+  "sha256": "fafb934e8222ec1e28611609c23f0d6712dbadd2c1fcd72b805e1461e803074f",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nDOCUMENTO FISCAL\n\nNº 93239\n\nDADOS DO EMITENTE\n\nNome do Fornecedor: Móveis Escritório Conforto ME\nCNPJ/MF: 66.777.888/0001-99\n\nData: 28.10.2024\n\nDescrição dos Itens\n\nProduto/Serviço Quantidade Valor Unitário Valor Item\nCadeira presidente ergonômica 5 1.290,00 R$ 6450,00\nMesa escritório 1,50m c/ gavetas 5 R$850,00 R$ 4.250,00\nArmário alto 2 portas 3 BRL 720,00 BRL 2.160,00\nGaveteiro volante 3 gavetas 5 R$ 380,00 1.900,00\n\nValor a Pagar BRL 14.760,00",
+  "conf_media": 88.4,
+  "conf_min": 15.0,
+  "ocr_ms": 1195,
+  "tesseract": "5.4.0.20240606"
+}
