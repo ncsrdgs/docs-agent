@@ -9,11 +9,11 @@
     "nota_fiscal": 17,
     "contrato": 17
   },
-  "com_nova_tentativa": 8,
-  "tokens_in": 62790,
-  "tokens_out": 23444,
-  "tokens_in_medio_por_documento": 1256,
-  "latencia_llm_media_ms": 3083,
+  "com_nova_tentativa": 14,
+  "tokens_in": 69304,
+  "tokens_out": 31313,
+  "tokens_in_medio_por_documento": 1386,
+  "latencia_llm_media_ms": 4559,
   "ocr_conf_media": 90.0,
   "pendentes": [
     {

@@ -15,11 +15,11 @@
     },
     "ocr_conf_media": 91.2,
     "ocr_conf_min": 63.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 717,
-    "tokens_out": 156,
-    "latencia_ms": 2606,
-    "tentativas": 1
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 1552,
+    "tokens_out": 1396,
+    "latencia_ms": 11510,
+    "tentativas": 2
   },
   {
     "arquivo": "001_rljd.pdf",
@@ -73,7 +73,7 @@
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2653,
     "tokens_out": 1601,
-    "latencia_ms": 8083,
+    "latencia_ms": 16408,
     "tentativas": 2
   },
   {
@@ -107,7 +107,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1117,
     "tokens_out": 218,
-    "latencia_ms": 2842,
+    "latencia_ms": 2522,
     "tentativas": 1
   },
   {
@@ -120,16 +120,16 @@
     "dados": {
       "data": "2023-09-14",
       "tecnico": "Marcos Vinícius Almeida",
-      "equipamento": "Elevador de Passagei - Atlas Schindler 3300",
+      "equipamento": "Elevador de Passagei Atlas Schindler 3300",
       "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
       "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
     },
     "ocr_conf_media": 89.3,
     "ocr_conf_min": 0.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 704,
-    "tokens_out": 169,
-    "latencia_ms": 1826,
+    "tokens_in": 745,
+    "tokens_out": 168,
+    "latencia_ms": 2691,
     "tentativas": 1
   },
   {
@@ -163,7 +163,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1052,
     "tokens_out": 220,
-    "latencia_ms": 1529,
+    "latencia_ms": 1964,
     "tentativas": 1
   },
   {
@@ -212,7 +212,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1264,
     "tokens_out": 351,
-    "latencia_ms": 1754,
+    "latencia_ms": 2097,
     "tentativas": 1
   },
   {
@@ -261,7 +261,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1291,
     "tokens_out": 357,
-    "latencia_ms": 2125,
+    "latencia_ms": 2491,
     "tentativas": 1
   },
   {
@@ -295,7 +295,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1191,
     "tokens_out": 245,
-    "latencia_ms": 1696,
+    "latencia_ms": 1514,
     "tentativas": 1
   },
   {
@@ -314,11 +314,11 @@
     },
     "ocr_conf_media": 91.1,
     "ocr_conf_min": 63.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 717,
-    "tokens_out": 156,
-    "latencia_ms": 1676,
-    "tentativas": 1
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 1552,
+    "tokens_out": 1389,
+    "latencia_ms": 7329,
+    "tentativas": 2
   },
   {
     "arquivo": "004_19u4.pdf",
@@ -369,11 +369,11 @@
     },
     "ocr_conf_media": 89.8,
     "ocr_conf_min": 71.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 1303,
-    "tokens_out": 409,
-    "latencia_ms": 1746,
-    "tentativas": 1
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 2641,
+    "tokens_out": 2230,
+    "latencia_ms": 7329,
+    "tentativas": 2
   },
   {
     "arquivo": "004_6hhe.pdf",
@@ -392,9 +392,9 @@
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 86.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 691,
+    "tokens_in": 732,
     "tokens_out": 148,
-    "latencia_ms": 1351,
+    "latencia_ms": 1419,
     "tentativas": 1
   },
   {
@@ -428,7 +428,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 997,
     "tokens_out": 236,
-    "latencia_ms": 1617,
+    "latencia_ms": 1455,
     "tentativas": 1
   },
   {
@@ -441,16 +441,16 @@
     "dados": {
       "data": "2024-11-08",
       "tecnico": "Vanessa Cristina Borges",
-      "equipamento": "Transmissor de Press - Yokogava EJASSOA",
+      "equipamento": "Transmissor de Pressão Yokogava EJASSOA",
       "problema": "Transmissor apresentando leitura com erro de 8% em relação ao manômetro padrão. Sinal de saída 4-20mA instável com oscilações de +0.5mA. Instrumento não responde aos comandos do HART communicator.",
       "solucao": "Transmissor enviado para laboratório de calibração credenciado. Orçamento de reparo superior a 60% do valor de um equipamento novo. Recomendada a aquisição de novo transmissor. Aguardando aprovação da gerência para compra no valor de R$ 8.500,00. Instrumento provisório instalado para continuidade operacional."
     },
     "ocr_conf_media": 89.7,
     "ocr_conf_min": 0.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 731,
+    "tokens_in": 772,
     "tokens_out": 196,
-    "latencia_ms": 1903,
+    "latencia_ms": 1822,
     "tentativas": 1
   },
   {
@@ -503,9 +503,9 @@
     "ocr_conf_media": 86.5,
     "ocr_conf_min": 27.0,
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
-    "tokens_in": 2609,
-    "tokens_out": 1678,
-    "latencia_ms": 28271,
+    "tokens_in": 2585,
+    "tokens_out": 1960,
+    "latencia_ms": 51155,
     "tentativas": 2
   },
   {
@@ -539,7 +539,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1154,
     "tokens_out": 227,
-    "latencia_ms": 1557,
+    "latencia_ms": 1712,
     "tentativas": 1
   },
   {
@@ -559,9 +559,9 @@
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 85.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 690,
+    "tokens_in": 731,
     "tokens_out": 150,
-    "latencia_ms": 1493,
+    "latencia_ms": 1628,
     "tentativas": 1
   },
   {
@@ -607,11 +607,11 @@
     },
     "ocr_conf_media": 87.5,
     "ocr_conf_min": 1.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 1258,
-    "tokens_out": 332,
-    "latencia_ms": 1889,
-    "tentativas": 1
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 2572,
+    "tokens_out": 1859,
+    "latencia_ms": 7533,
+    "tentativas": 2
   },
   {
     "arquivo": "006_plga.pdf",
@@ -644,7 +644,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1121,
     "tokens_out": 216,
-    "latencia_ms": 1408,
+    "latencia_ms": 1530,
     "tentativas": 1
   },
   {
@@ -705,7 +705,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1359,
     "tokens_out": 468,
-    "latencia_ms": 1966,
+    "latencia_ms": 2098,
     "tentativas": 1
   },
   {
@@ -725,9 +725,9 @@
     "ocr_conf_media": 90.9,
     "ocr_conf_min": 68.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 690,
+    "tokens_in": 731,
     "tokens_out": 149,
-    "latencia_ms": 1347,
+    "latencia_ms": 1547,
     "tentativas": 1
   },
   {
@@ -761,7 +761,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1069,
     "tokens_out": 233,
-    "latencia_ms": 1584,
+    "latencia_ms": 1407,
     "tentativas": 1
   },
   {
@@ -774,16 +774,16 @@
     "dados": {
       "data": "2023-09-14",
       "tecnico": "Marcos Vinícius Almeida",
-      "equipamento": "Elevador de Passagei - Atlas Schindler 3300",
+      "equipamento": "Elevador de Passagei Atlas Schindler 3300",
       "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
       "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
     },
     "ocr_conf_media": 90.0,
     "ocr_conf_min": 0.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 701,
-    "tokens_out": 169,
-    "latencia_ms": 1445,
+    "tokens_in": 742,
+    "tokens_out": 168,
+    "latencia_ms": 1416,
     "tentativas": 1
   },
   {
@@ -817,7 +817,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 980,
     "tokens_out": 221,
-    "latencia_ms": 1566,
+    "latencia_ms": 1599,
     "tentativas": 1
   },
   {
@@ -878,7 +878,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1358,
     "tokens_out": 497,
-    "latencia_ms": 2211,
+    "latencia_ms": 1978,
     "tentativas": 1
   },
   {
@@ -891,16 +891,16 @@
     "dados": {
       "data": "2023-09-14",
       "tecnico": "Marcos Vinícius Alme",
-      "equipamento": "Elevador de Passageiros - Modelo: Atlas Schindler 3300",
+      "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
       "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
       "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
     },
     "ocr_conf_media": 91.4,
     "ocr_conf_min": 63.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 739,
-    "tokens_out": 170,
-    "latencia_ms": 1872,
+    "tokens_in": 780,
+    "tokens_out": 167,
+    "latencia_ms": 1403,
     "tentativas": 1
   },
   {
@@ -949,7 +949,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1285,
     "tokens_out": 346,
-    "latencia_ms": 2025,
+    "latencia_ms": 1778,
     "tentativas": 1
   },
   {
@@ -983,7 +983,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1117,
     "tokens_out": 218,
-    "latencia_ms": 1699,
+    "latencia_ms": 1549,
     "tentativas": 1
   },
   {
@@ -1002,11 +1002,11 @@
     },
     "ocr_conf_media": 91.3,
     "ocr_conf_min": 63.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 735,
-    "tokens_out": 167,
-    "latencia_ms": 1437,
-    "tentativas": 1
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 1588,
+    "tokens_out": 1340,
+    "latencia_ms": 6836,
+    "tentativas": 2
   },
   {
     "arquivo": "010_rt7s.pdf",
@@ -1054,7 +1054,7 @@
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2572,
     "tokens_out": 1536,
-    "latencia_ms": 8322,
+    "latencia_ms": 7060,
     "tentativas": 2
   },
   {
@@ -1088,7 +1088,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1114,
     "tokens_out": 215,
-    "latencia_ms": 1483,
+    "latencia_ms": 2277,
     "tentativas": 1
   },
   {
@@ -1122,7 +1122,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1180,
     "tokens_out": 234,
-    "latencia_ms": 1429,
+    "latencia_ms": 1617,
     "tentativas": 1
   },
   {
@@ -1170,8 +1170,8 @@
     "ocr_conf_min": 70.0,
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2568,
-    "tokens_out": 1338,
-    "latencia_ms": 6144,
+    "tokens_out": 1337,
+    "latencia_ms": 6104,
     "tentativas": 2
   },
   {
@@ -1184,16 +1184,16 @@
     "dados": {
       "data": "2024-05-10",
       "tecnico": "Camila Andrade Pinto",
-      "equipamento": "Gerador de Emergênci - Cummins C150D5",
+      "equipamento": "Gerador de Emergênci Cummins C150D5",
       "problema": "Gerador não partindo automaticamente durante teste semanal programado. Bateria de partida apresentando tensão abaixo do nominal. Último teste manual apresentou dificuldade de ignição.",
       "solucao": "Substituição do banco de baterias (2 unidades 12V 150Ah) e do carregador automático. Limpeza dos bornes e aplicação de vaselina protetora. Verificação do sistema de pré-aquecimento do bloco do motor. Realização de teste completo de transferência automática com carga real."
     },
     "ocr_conf_media": 89.7,
     "ocr_conf_min": 0.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 699,
-    "tokens_out": 169,
-    "latencia_ms": 1480,
+    "tokens_in": 740,
+    "tokens_out": 168,
+    "latencia_ms": 1478,
     "tentativas": 1
   },
   {
@@ -1227,7 +1227,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1156,
     "tokens_out": 231,
-    "latencia_ms": 1525,
+    "latencia_ms": 1668,
     "tentativas": 1
   },
   {
@@ -1240,16 +1240,16 @@
     "dados": {
       "data": "2024-06-15",
       "tecnico": "Renato Azevedo Costa",
-      "equipamento": "Caldeira a Vapor | Modelo: ATA CVG-2000",
+      "equipamento": "Caldeira a Vapor ATA CVG-2000",
       "problema": "Vazamento de vapor detectado na região do espelho superior da caldeira durante inspeção NR-13. Pressão de trabalho limitada a 60% da nominal por segurança. Produção operando com restrição de vapor.",
       "solucao": "Reparo identificado requer parada programada de 5 dias e aprovação da gerência industrial para execução. Necessário contratação de empresa especializada em soldagem de caldeiras com profissionais certificados. Laudo técnico elaborado e encaminhado para aprovação. Custo estimado do reparo: R$ 28.000,00."
     },
     "ocr_conf_media": 92.1,
     "ocr_conf_min": 89.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 721,
-    "tokens_out": 192,
-    "latencia_ms": 1571,
+    "tokens_in": 762,
+    "tokens_out": 189,
+    "latencia_ms": 1437,
     "tentativas": 1
   },
   {
@@ -1303,8 +1303,8 @@
     "ocr_conf_min": 60.0,
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2685,
-    "tokens_out": 1795,
-    "latencia_ms": 6649,
+    "tokens_out": 1773,
+    "latencia_ms": 7225,
     "tentativas": 2
   },
   {
@@ -1352,8 +1352,8 @@
     "ocr_conf_min": 54.0,
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1253,
-    "tokens_out": 347,
-    "latencia_ms": 1705,
+    "tokens_out": 341,
+    "latencia_ms": 1849,
     "tentativas": 1
   },
   {
@@ -1373,9 +1373,9 @@
     "ocr_conf_media": 91.8,
     "ocr_conf_min": 89.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 697,
+    "tokens_in": 738,
     "tokens_out": 162,
-    "latencia_ms": 1969,
+    "latencia_ms": 1716,
     "tentativas": 1
   },
   {
@@ -1409,7 +1409,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 977,
     "tokens_out": 218,
-    "latencia_ms": 1960,
+    "latencia_ms": 1502,
     "tentativas": 1
   },
   {
@@ -1422,16 +1422,16 @@
     "dados": {
       "data": "2023-03-15",
       "tecnico": "Carlos Eduardo Silva",
-      "equipamento": "Torno CNC - Romi GL 240",
+      "equipamento": "Torno CNC Romi GL 240",
       "problema": "Equipamento apresentando vibração excessiva durante operação em alta rotação. Operador relatou ruído anormal proveniente do cabeçote principal. Peças usinadas apresentando acabamento fora do padrão de qualidade.",
       "solucao": "Realizada substituição completa dos rolamentos do eixo principal (2 unidades SKF 6308). Efetuado realinhamento do cabeçote utilizando relógio comparador. Lubrificação geral do sistema e teste de funcionamento por 2 horas em diferentes rotações."
     },
     "ocr_conf_media": 89.6,
     "ocr_conf_min": 0.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 699,
-    "tokens_out": 168,
-    "latencia_ms": 1342,
+    "tokens_in": 740,
+    "tokens_out": 167,
+    "latencia_ms": 1411,
     "tentativas": 1
   },
   {
@@ -1465,7 +1465,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1179,
     "tokens_out": 238,
-    "latencia_ms": 1693,
+    "latencia_ms": 1494,
     "tentativas": 1
   },
   {
@@ -1526,8 +1526,8 @@
     "ocr_conf_min": 20.0,
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2688,
-    "tokens_out": 2642,
-    "latencia_ms": 11351,
+    "tokens_out": 2616,
+    "latencia_ms": 11060,
     "tentativas": 2
   },
   {
@@ -1540,24 +1540,24 @@
       "cnpj: dígito verificador de CNPJ inválido (informativo)"
     ],
     "dados": {
-      "fornecedor": "M5veis Escrit3rio Conforto ME",
+      "fornecedor": "Móveis Escritório Conforto ME",
       "cnpj": "66.777.888/0001-99",
       "data": "2024-10-28",
       "itens": [
         {
-          "descricao": "Cadeira presidente ergon4mica",
+          "descricao": "Cadeira presidente ergonômica",
           "quantidade": 5.0,
           "valor_unitario": 1290.0,
           "valor_total": 6450.0
         },
         {
-          "descricao": "Mesa escrit3rio 1,50m c/ gavetas",
+          "descricao": "Mesa escritório 1,50m c/ gavetas",
           "quantidade": 5.0,
           "valor_unitario": 850.0,
           "valor_total": 4250.0
         },
         {
-          "descricao": "Arm4rio alto 2 portas",
+          "descricao": "Armário alto 2 portas",
           "quantidade": 3.0,
           "valor_unitario": 720.0,
           "valor_total": 2160.0
@@ -1575,8 +1575,8 @@
     "ocr_conf_min": 15.0,
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1297,
-    "tokens_out": 298,
-    "latencia_ms": 1854,
+    "tokens_out": 341,
+    "latencia_ms": 1923,
     "tentativas": 1
   },
   {
@@ -1610,7 +1610,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1064,
     "tokens_out": 229,
-    "latencia_ms": 1620,
+    "latencia_ms": 1447,
     "tentativas": 1
   },
   {
@@ -1630,9 +1630,9 @@
     "ocr_conf_media": 91.5,
     "ocr_conf_min": 84.0,
     "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 700,
+    "tokens_in": 741,
     "tokens_out": 157,
-    "latencia_ms": 1493,
+    "latencia_ms": 2366,
     "tentativas": 1
   },
   {
@@ -1651,11 +1651,11 @@
     },
     "ocr_conf_media": 91.6,
     "ocr_conf_min": 43.0,
-    "modelo": "gemini-3.5-flash-lite",
-    "tokens_in": 732,
-    "tokens_out": 196,
-    "latencia_ms": 1553,
-    "tentativas": 1
+    "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
+    "tokens_in": 1582,
+    "tokens_out": 1100,
+    "latencia_ms": 4997,
+    "tentativas": 2
   },
   {
     "arquivo": "016_jyde.pdf",
@@ -1688,7 +1688,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1196,
     "tokens_out": 233,
-    "latencia_ms": 1922,
+    "latencia_ms": 1478,
     "tentativas": 1
   },
   {
@@ -1742,8 +1742,8 @@
     "ocr_conf_min": 74.0,
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
     "tokens_in": 2641,
-    "tokens_out": 1402,
-    "latencia_ms": 6403,
+    "tokens_out": 1372,
+    "latencia_ms": 14216,
     "tentativas": 2
   },
   {
@@ -1777,7 +1777,7 @@
     "modelo": "gemini-3.5-flash-lite",
     "tokens_in": 1134,
     "tokens_out": 225,
-    "latencia_ms": 1674,
+    "latencia_ms": 1481,
     "tentativas": 1
   },
   {
@@ -1824,9 +1824,9 @@
     "ocr_conf_media": 89.9,
     "ocr_conf_min": 73.0,
     "modelo": "gemini-3.5-flash-lite -> gemini-3.5-flash",
-    "tokens_in": 2545,
-    "tokens_out": 1516,
-    "latencia_ms": 6476,
+    "tokens_in": 2566,
+    "tokens_out": 1257,
+    "latencia_ms": 6422,
     "tentativas": 2
   }
 ]
