@@ -6,6 +6,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from pipeline import config
 from pipeline.models import Registro
 
 
@@ -115,22 +116,43 @@ def _resumo(registros: list[Registro]) -> dict:
     n = len(registros)
     confs = [r.ocr_conf_media for r in registros if r.ocr_conf_media is not None]
     lat = sum(r.latencia_ms for r in registros)
-    return {
+    tokens_in = sum(r.tokens_in for r in registros)
+    tokens_out = sum(r.tokens_out for r in registros)
+
+    # OCR: tempo medido quando o OCR foi feito (o cache guarda o tempo original)
+    medidos = [r for r in registros if r.ocr_ms is not None and r.paginas]
+    ocr_s = sum(r.ocr_ms for r in medidos) / 1000
+    paginas = sum(r.paginas for r in medidos)
+
+    resumo = {
         "total": n,
         "por_status": dict(Counter(r.status for r in registros)),
         "por_tipo": dict(Counter(r.tipo or "indefinido" for r in registros)),
         "com_nova_tentativa": sum(1 for r in registros if r.tentativas > 1),
-        "tokens_in": sum(r.tokens_in for r in registros),
-        "tokens_out": sum(r.tokens_out for r in registros),
-        "tokens_in_medio_por_documento": round(sum(r.tokens_in for r in registros) / n) if n else 0,
+        "tokens_in": tokens_in,
+        "tokens_out": tokens_out,
+        "tokens_in_medio_por_documento": round(tokens_in / n) if n else 0,
+        "tokens_out_medio_por_documento": round(tokens_out / n) if n else 0,
         "latencia_llm_media_ms": round(lat / n) if n else 0,
         "ocr_conf_media": round(sum(confs) / len(confs), 1) if confs else None,
-        "pendentes": [
-            {"arquivo": r.arquivo, "status": r.status, "motivo": r.motivo}
-            for r in registros
-            if r.status != "ok"
-        ],
+        "ocr_ms_medio_por_documento": round(ocr_s * 1000 / len(medidos)) if medidos else None,
+        "ocr_paginas_por_segundo": round(paginas / ocr_s, 2) if ocr_s else None,
+        "tesseract": sorted({r.tesseract for r in registros if r.tesseract}),
     }
+
+    # Custo estimado: só quando os preços são informados (variáveis de ambiente).
+    # Aplica o mesmo preço a todos os tokens, então é uma aproximação.
+    if config.PRECO_ENTRADA is not None and config.PRECO_SAIDA is not None and n:
+        custo = (tokens_in * config.PRECO_ENTRADA + tokens_out * config.PRECO_SAIDA) / 1_000_000
+        resumo["custo_estimado_usd"] = round(custo, 4)
+        resumo["custo_medio_por_documento_usd"] = round(custo / n, 6)
+
+    resumo["pendentes"] = [
+        {"arquivo": r.arquivo, "status": r.status, "motivo": r.motivo}
+        for r in registros
+        if r.status != "ok"
+    ]
+    return resumo
 
 
 def gravar(registros: list[Registro], saida: Path) -> dict:

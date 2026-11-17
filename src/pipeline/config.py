@@ -26,3 +26,15 @@ TRECHO_CLASSIFICACAO = 3000
 def carregar_prompt(nome: str) -> str:
     """Lê um prompt de src/pipeline/prompts/<nome>.md."""
     return (PROMPTS_DIR / f"{nome}.md").read_text(encoding="utf-8").strip()
+
+
+def _preco(nome: str) -> float | None:
+    """Preço em dólares por milhão de tokens, vindo do ambiente (None se não informado)."""
+    try:
+        return float(os.environ[nome])
+    except (KeyError, ValueError):
+        return None
+
+
+PRECO_ENTRADA = _preco("PRECO_ENTRADA_USD_POR_MILHAO")
+PRECO_SAIDA = _preco("PRECO_SAIDA_USD_POR_MILHAO")
