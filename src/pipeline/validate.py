@@ -70,7 +70,7 @@ def _checar_documento(valor, rotulo, digitos_texto, v: Validacao) -> None:
     if not valor:
         return
     d = re.sub(r"\D", "", valor)
-    if d and d not in digitos_texto:
+    if d and digitos_texto is not None and d not in digitos_texto:
         v.erros.append(f"{rotulo} '{valor}' não aparece no texto do documento")
         return
     if len(d) == 14 and not _cnpj_ok(d):
@@ -80,6 +80,8 @@ def _checar_documento(valor, rotulo, digitos_texto, v: Validacao) -> None:
 
 
 def _checar_numeros(valores: list[tuple[str, float | None]], nums, v: Validacao) -> None:
+    if nums is None:  # sem âncora no texto (leitura por imagem)
+        return
     fora = [f"{rot}={val}" for rot, val in valores if val is not None and round(val, 2) not in nums]
     if fora:
         v.erros.append("valores que não aparecem no texto do documento: " + ", ".join(fora))
@@ -169,11 +171,16 @@ def _relatorio(r: RelatorioManutencao, v: Validacao) -> None:
     )
 
 
-def validar(tipo: str, dados, texto: str) -> Validacao:
-    """Valida o modelo final contra regras e contra o texto do OCR."""
+def validar(tipo: str, dados, texto: str, ancora: bool = True) -> Validacao:
+    """Valida o modelo final contra regras e contra o texto do OCR.
+
+    Com `ancora=False`, não exige que números e documentos apareçam no texto do OCR
+    (usado quando os dados vieram da imagem, onde o OCR pode ser justamente o que errou).
+    Campos obrigatórios, somas e vigência continuam sendo conferidos.
+    """
     v = Validacao()
-    nums = _numeros_do_texto(texto)
-    digitos = re.sub(r"\D", "", texto)
+    nums = _numeros_do_texto(texto) if ancora else None
+    digitos = re.sub(r"\D", "", texto) if ancora else None
     if tipo == "nota_fiscal":
         _nota(dados, nums, digitos, v)
     elif tipo == "contrato":

@@ -10,10 +10,12 @@
     "contrato": 17
   },
   "com_nova_tentativa": 15,
-  "tokens_in": 71196,
-  "tokens_out": 33165,
-  "tokens_in_medio_por_documento": 1424,
-  "tokens_out_medio_por_documento": 663,
+  "com_visao": 12,
+  "visao_adotada": 12,
+  "tokens_in": 97728,
+  "tokens_out": 50636,
+  "tokens_in_medio_por_documento": 1955,
+  "tokens_out_medio_por_documento": 1013,
   "latencia_llm_media_ms": 0,
   "ocr_conf_media": 90.0,
   "ocr_ms_medio_por_documento": 1429,
@@ -70,7 +72,7 @@
     {
       "arquivo": "014_yfas.pdf",
       "status": "needs_review",
-      "motivo": "extração não passou na validação após 2 tentativa(s): item 2 sem quantidade"
+      "motivo": "inconsistência no documento: soma dos itens (8715.5) diferente do total do documento (8038.5)"
     },
     {
       "arquivo": "016_of67.pdf",

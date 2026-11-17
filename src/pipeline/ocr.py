@@ -71,6 +71,30 @@ def _ocr_pagina(img: Image.Image) -> tuple[str, list[float]]:
     return texto, confs
 
 
+def imagens_do_pdf(caminho, max_lado: int = 1800, max_paginas: int = 3) -> list[bytes]:
+    """Páginas do PDF como JPEG, para o fallback de visão.
+
+    O cache do OCR guarda só o texto, então as imagens são lidas do PDF quando precisam.
+    """
+    try:
+        doc = pymupdf.open(caminho)
+    except Exception as e:
+        raise OcrError(f"não foi possível abrir como PDF: {e}") from e
+    try:
+        saida = []
+        for pagina in list(doc)[:max_paginas]:
+            img = _imagem_da_pagina(doc, pagina)
+            img.thumbnail((max_lado, max_lado))
+            buf = io.BytesIO()
+            img.save(buf, format="JPEG", quality=90)
+            saida.append(buf.getvalue())
+        if not saida:
+            raise OcrError("PDF sem páginas")
+        return saida
+    finally:
+        doc.close()
+
+
 def ocr_pdf(caminho, usar_cache: bool = True) -> dict:
     """Faz OCR de todas as páginas.
 

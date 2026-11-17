@@ -7,6 +7,10 @@ Roteamento:
   fora do texto)                              e, se persistir, needs_review
 - anomalia do documento (somas, vigência)   -> needs_review, sem nova tentativa
 - sem pendências                            -> ok
+
+Fallback de visão: antes de fechar um documento com erro persistente ou anomalia, ele é
+relido uma vez a partir da imagem (modelo maior). O resultado só substitui o do texto
+se não tiver erros e não tiver mais anomalias que o original.
 """
 from __future__ import annotations
 
@@ -18,11 +22,11 @@ from langgraph.graph import END, START, StateGraph
 
 from pipeline import config
 from pipeline.classify import classificar
-from pipeline.extract import extrair
+from pipeline.extract import extrair, extrair_por_imagem
 from pipeline.llm import ErroLLM, Uso
 from pipeline.models import Registro
 from pipeline.normalize import normalizar
-from pipeline.ocr import OcrError, ocr_pdf
+from pipeline.ocr import OcrError, imagens_do_pdf, ocr_pdf
 from pipeline.validate import validar
 
 CONFIANCA_MIN = 0.7
@@ -43,6 +47,8 @@ class Estado(TypedDict, total=False):
     tokens_in: int
     tokens_out: int
     latencia_ms: int
+    visao_tentada: bool
+    visao_adotada: bool
     falha: str
     status: str
     motivo: str
@@ -99,6 +105,37 @@ def n_validar(s: Estado) -> dict:
     }
 
 
+def n_visao(s: Estado) -> dict:
+    """Relê o documento pela imagem. Nunca piora o resultado: na dúvida, mantém o do texto."""
+    base = {"visao_tentada": True}
+    tipo = s["tipo"]
+    try:
+        imagens = imagens_do_pdf(s["caminho"], config.VISAO_MAX_LADO, config.VISAO_MAX_PAGINAS)
+        ident = f"{s['ocr'].get('sha256')}:{config.VISAO_MAX_LADO}:{config.VISAO_MAX_PAGINAS}"
+        ext, uso = extrair_por_imagem(tipo, imagens, ident)
+    except Exception:
+        return base  # o fallback é opcional: qualquer falha mantém o resultado do texto
+    base.update(_soma(s, uso))
+    try:
+        final, avisos = normalizar(tipo, ext)
+    except Exception:
+        return base
+    v = validar(tipo, final, s["ocr"]["texto"], ancora=False)
+    if v.erros:
+        return base
+    if not s.get("erros") and len(v.anomalias) > len(s.get("anomalias", [])):
+        return base
+    return {
+        **base,
+        "visao_adotada": True,
+        "extraido": ext,
+        "dados": final,
+        "erros": [],
+        "anomalias": v.anomalias,
+        "avisos": avisos + v.avisos + ["dados relidos a partir da imagem (fallback de visão)"],
+    }
+
+
 def n_fechar(s: Estado) -> dict:
     if s.get("falha"):
         return {"status": "failed", "motivo": s["falha"]}
@@ -151,6 +188,8 @@ def r_extrair(s: Estado) -> str:
 def r_validar(s: Estado) -> str:
     if s.get("erros") and s["tentativas"] < MAX_TENTATIVAS:
         return "extrair"
+    if config.VISAO and (s.get("erros") or s.get("anomalias")) and not s.get("visao_tentada"):
+        return "visao"
     return "fechar"
 
 
@@ -160,6 +199,7 @@ def _montar():
     g.add_node("classificar", n_classificar)
     g.add_node("extrair", n_extrair)
     g.add_node("validar", n_validar)
+    g.add_node("visao", n_visao)
     g.add_node("fechar", n_fechar)
 
     g.add_edge(START, "ocr")
@@ -170,7 +210,10 @@ def _montar():
     g.add_conditional_edges(
         "extrair", r_extrair, {"validar": "validar", "extrair": "extrair", "fechar": "fechar"}
     )
-    g.add_conditional_edges("validar", r_validar, {"extrair": "extrair", "fechar": "fechar"})
+    g.add_conditional_edges(
+        "validar", r_validar, {"extrair": "extrair", "visao": "visao", "fechar": "fechar"}
+    )
+    g.add_edge("visao", "fechar")
     g.add_edge("fechar", END)
     return g.compile()
 
@@ -194,6 +237,8 @@ def processar(caminho) -> Registro:
         modelo = f"{config.MODELO} -> {config.MODELO_FORTE}"
     else:
         modelo = config.MODELO if tentativas else None
+    if s.get("visao_tentada") and modelo:
+        modelo += f" + visão ({config.MODELO_FORTE})"
     return Registro(
         arquivo=caminho.name,
         sha256=ocr.get("sha256"),
@@ -212,6 +257,8 @@ def processar(caminho) -> Registro:
         tokens_out=s.get("tokens_out", 0),
         latencia_ms=s.get("latencia_ms", 0),
         tentativas=tentativas,
+        visao_tentada=bool(s.get("visao_tentada")),
+        visao_adotada=bool(s.get("visao_adotada")),
     )
 
 
@@ -222,7 +269,8 @@ if __name__ == "__main__":
         r = processar(Path("data/raw") / f"{nome}.pdf")
         print(
             f"{nome}  {r.status:12} tipo={r.tipo} tentativas={r.tentativas} "
-            f"tokens={r.tokens_in}/{r.tokens_out} {r.latencia_ms}ms"
+            f"tokens={r.tokens_in}/{r.tokens_out} {r.latencia_ms}ms "
+            f"visão={'adotada' if r.visao_adotada else 'tentada' if r.visao_tentada else '-'}"
         )
         if r.motivo:
             print(f"    motivo: {r.motivo}")

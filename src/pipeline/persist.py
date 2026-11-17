@@ -129,6 +129,8 @@ def _resumo(registros: list[Registro]) -> dict:
         "por_status": dict(Counter(r.status for r in registros)),
         "por_tipo": dict(Counter(r.tipo or "indefinido" for r in registros)),
         "com_nova_tentativa": sum(1 for r in registros if r.tentativas > 1),
+        "com_visao": sum(1 for r in registros if r.visao_tentada),
+        "visao_adotada": sum(1 for r in registros if r.visao_adotada),
         "tokens_in": tokens_in,
         "tokens_out": tokens_out,
         "tokens_in_medio_por_documento": round(tokens_in / n) if n else 0,

@@ -112,6 +112,7 @@ class ModeloFalso:
 def registros(tmp_path_factory):
     mp = pytest.MonkeyPatch()
     mp.setattr(llm, "_modelo", lambda _nome: ModeloFalso())
+    mp.setattr(graph.config, "VISAO", False)  # o modelo falso só responde a texto
     mp.setenv("LLM_CACHE", "0")  # sem cache: o modelo falso é sempre consultado
     try:
         yield [graph.processar(PDFS / f"{d}.pdf") for d in DOCUMENTOS]

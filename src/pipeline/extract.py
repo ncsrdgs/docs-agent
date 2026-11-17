@@ -30,6 +30,31 @@ def extrair(tipo: str, texto: str, erro: str | None = None):
     return extrair_estruturado(SCHEMA_EXTRACAO[tipo], instrucoes, texto, modelo)
 
 
+AVISO_IMAGEM = (
+    "\n\nNesta chamada o documento vem como imagem anexa, e não como texto de OCR. "
+    "Leia os valores diretamente da imagem e copie-os como estão impressos, "
+    "inclusive o total impresso, mesmo que não bata com a soma dos itens."
+)
+
+
+def extrair_por_imagem(tipo: str, imagens: list[bytes], imagens_id: str):
+    """Extrai os campos a partir das imagens das páginas, com o modelo mais forte.
+
+    Fallback para documentos que o caminho por texto não resolveu. Devolve (modelo_extraido, Uso).
+    """
+    if tipo not in SCHEMA_EXTRACAO:
+        raise ValueError(f"tipo sem extração: {tipo}")
+    instrucoes = config.carregar_prompt(PROMPTS[tipo]) + AVISO_IMAGEM
+    return extrair_estruturado(
+        SCHEMA_EXTRACAO[tipo],
+        instrucoes,
+        "Extraia os campos do documento anexo.",
+        config.MODELO_FORTE,
+        imagens=imagens,
+        imagens_id=imagens_id,
+    )
+
+
 if __name__ == "__main__":
     import sys
     from pathlib import Path
