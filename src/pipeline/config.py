@@ -15,7 +15,7 @@ PROJETO_GCP = os.getenv("GOOGLE_CLOUD_PROJECT")
 LOCAL_GCP = os.getenv("GOOGLE_CLOUD_LOCATION", "global")
 USAR_VERTEX = bool(PROJETO_GCP)
 TEMPERATURA = 0.0
-MAX_RETRIES = 2
+MAX_RETRIES = 5
 TIMEOUT_S = 60
 
 # Trecho do texto que a classificação (regras e LLM) considera
