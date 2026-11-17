@@ -1,0 +1,10 @@
+{
+  "arquivo": "007_7mav.pdf",
+  "sha256": "7f1baaef83dea534a93378cc70c0c38d48291734cb49d3d66f5ec574a21302e0",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nDOCUMENTO FISCAL\n\nNº 77277\n\nDADOS DO EMITENTE\n\nNome do Fornecedor: Limpeza Industrial HigienMax Eireli\n\nCNPJ/MF: 44.555.666/000177\nData: 10/09/2024\n\nDescrição dos Itens\n\nProduto/Serviço Quantidade Valor Unitário Valor tem\nDetergente industrial 5L 30 32,90 987,00\nDesinfetante concentrado 5L 25 BRL 45,90 R$ 1.147,50\nPapel higiênico rolão 300m fardo c/8 20 R$ 68,00 BRL 1.360,00\nSaco de lixo 100L pct c/100 15 R$55,00 825,00\nLuva de borracha par 50 R$ 12,90 R$ 645,00\nRodo alumínio 60cm 10 R$ 35,00 BRL 350,00\n\nValor a Pagar 5.157,50",
+  "conf_media": 87.4,
+  "conf_min": 36.0,
+  "ocr_ms": 1337,
+  "tesseract": "5.4.0.20240606"
+}

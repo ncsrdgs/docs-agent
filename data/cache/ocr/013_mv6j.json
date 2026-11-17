@@ -1,0 +1,10 @@
+{
+  "arquivo": "013_mv6j.pdf",
+  "sha256": "aa0f2c11c531640d25cb607cea95931a0e0b14d773b922ff567a1dedf1d2cba7",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nContrato de Serviço\n\nCliente\nMaria Aparecida Santos Silva - 123.456.789-00\n\nPrestador\nAdvocacia Especializada Dr. Roberto Mendes - 45.678.901/0001-23\n\nDescrição do Serviço\n\nPrestação de serviços advocatícios para acompanhamento de processo de inventário e partilha de bens, incluindo elaboração de\npetições, comparecimento a audiências, negociação entre herdeiros e regularização de documentação imobiliária.\n\nDe/Até\n2024-02-10 até 10 de agosto de 2024\n\nHonorários\nBRL 2.800,00 mensais",
+  "conf_media": 91.7,
+  "conf_min": 88.0,
+  "ocr_ms": 1261,
+  "tesseract": "5.4.0.20240606"
+}

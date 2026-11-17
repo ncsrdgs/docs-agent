@@ -1,0 +1,10 @@
+{
+  "arquivo": "005_91eh.pdf",
+  "sha256": "aff19bd02747f3e4ef8d0121a1f7d4b9f459ce9eabf17a836d0424a7709aecc3",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nINSTRUMENTO PARTICULAR DE CONTRATO\n\nTOMADOR DO SERVIÇO\n\nAna Paula Ribeiro Costa MEI, 01.234.987/0001-10, Rua XV de Novembro, 1234, Sala 12, Centro, Curitiba - PR, CEP\n80020-310\n\nFORNECEDOR DO SERVIÇO\n\nWebDev Curitiba Desenvolvimento de Software Ltda, 12.345.876/0001-21, Av. Sete de Setembro, 4698, Batel, Curitiba - PR,\nCEP 80240-000\n\nEscopo\n\nPrestação de serviços de desenvolvimento de loja virtual (e-commerce) personalizada, incluindo design responsivo,\nintegração com meios de pagamento (PIX, cartões e boleto), integração com Correios e transportadoras, painel\nadministrativo, e hospedagem por 12 meses.\n\nDuração\n\nInício: 01/03/2024 | Término: 30-06-2024\n\nPreço Acordado\n\n3.200,00 por mês\n\nO projeto será desenvolvido em 4 fases com entregas parciais para aprovação da CONTRATANTE.\nApós a entrega final, a CONTRATADA oferecerá 90 dias de garantia para correção de bugs.\n\nO código fonte será de propriedade exclusiva da CONTRATANTE após quitação integral do contrato.",
+  "conf_media": 91.3,
+  "conf_min": 76.0,
+  "ocr_ms": 1850,
+  "tesseract": "5.4.0.20240606"
+}

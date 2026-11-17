@@ -1,0 +1,10 @@
+{
+  "arquivo": "004_6hhe.pdf",
+  "sha256": "2688c71ed0abeec627008410cfb49e98cf3656b850c9638b0fa9dc47624a9e3f",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nRelatório Técnico\nData: 14.09.2023\n\nNome do Técnico\n\nMarcos Vinícius Almeida - Elevadores e Equipamentos de Transporte (Mat. 312456)\n\nIdentificação do Equipamento\n\nTipo: Elevador de Passageiros\n\nModelo: Atlas Schindler 3300\n\nPatrimônio: ELV-2017-0004\n\nLocal: Torre Administrativa - Hall Principal\n\nDiagnóstico\n\nEncoder incremental do motor de tração com leitura intermitente e cabos de comunicação com isolamento danificado\n\nAção Corretiva\n\nSubstituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos\nentre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos\nos andares.",
+  "conf_media": 91.6,
+  "conf_min": 86.0,
+  "ocr_ms": 1508,
+  "tesseract": "5.4.0.20240606"
+}

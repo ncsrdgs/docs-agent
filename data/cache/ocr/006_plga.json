@@ -1,0 +1,10 @@
+{
+  "arquivo": "006_plga.pdf",
+  "sha256": "80897478761c5072abd8fde4605d170dece8196503a90528eab59c75936602cb",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nCONTRATO DE PRESTAÇÃO DE SERVIÇOS\n\nCONTRATANTE\nTech Solutions Ltda, inscrito no CNPJ/CPF sob o nº 12.345.678/000190, com sede em Av. Paulista, 1500, Sala 1201, Bela Vista,\nSão Paulo - SP, CEP 01310-100.\n\nCONTRATADA\n\nCloudServ Tecnologia S.A., inscrito no CNPJ/CPF sob o nº 98765432000110, com sede em Rua da Consolação, 2800, Consolação,\nSão Paulo - SP, CEP 01416-000.\n\nCLÁUSULA PRIMEIRA - DO OBJETO\nPrestação de serviços de hospedagem em nuvem, incluindo infraestrutura como serviço (laaS), monitoramento 24/7, backup diário\nautomatizado, suporte técnico especializado e garantia de disponibilidade de 99,9% (SLA).\n\nCLÁUSULA SEGUNDA - DA VIGÊNCIA\nO presente contrato terá vigência de 2024-01-15 a 14.01.2025.\n\nCLÁUSULA TERCEIRA - DO VALOR\nValor Mensal: R$ 8.500,00",
+  "conf_media": 91.7,
+  "conf_min": 89.0,
+  "ocr_ms": 1571,
+  "tesseract": "5.4.0.20240606"
+}

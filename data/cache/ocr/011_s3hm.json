@@ -1,0 +1,10 @@
+{
+  "arquivo": "011_s3hm.pdf",
+  "sha256": "a1dfddfd3b42636b9a173dc47879708239a90f1524685fce567ed67bdf1fd457",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFATURA\n\nEmitido em: 12/11/24\n\nTransportadora Carga Segura S.A.\nDocumento: 77888999000100\n\nProdutos\n\n- Frete rodoviário SP-RJ carga fechad 2x BRL 3.200,00\n- Frete rodoviário SP-BH carga fracio 5 x BRL 890,00\n\n- Seguro transporte 7 x 180,00\n\n- Taxa de coleta 7 x BRL 150,00\n\nBRL 6.400,00\n4.450,00\nR$1.260,00\nR$ 1050,00\n\nTotal Geral\n\nR$ 13160,00",
+  "conf_media": 89.0,
+  "conf_min": 70.0,
+  "ocr_ms": 1180,
+  "tesseract": "5.4.0.20240606"
+}

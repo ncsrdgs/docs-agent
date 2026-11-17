@@ -1,0 +1,10 @@
+{
+  "arquivo": "011_x21a.pdf",
+  "sha256": "17964fd7e064d959eb4aab1a38ca4f0d78687dc82258693e3f5c5832b78da4e2",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nORDEM DE SERVIÇO\n\nOS Nº 93060\n\nM Realizado em 10.05.2024\n\n[64] Profissional Camila Andrade Pinto (256789)\n\n[64] Ativo Gerador de Emergênci - Cummins C150D5\n\nDefeito Encontrado\nGerador não partindo automaticamente durante teste semanal programado. Bateria de partida apresentando tensão abaixo do nominal. Último teste\n\nmanual apresentou dificuldade de ignição.\n\nReparo Efetuado\nSubstituição do banco de baterias (2 unidades 12V 150Ah) e do carregador automático. Limpeza dos bornes e aplicação de vaselina protetora.\n\nVerificação do sistema de pré-aquecimento do bloco do motor. Realização de teste completo de transferência automática com carga real.\n\nSituação: Concluído",
+  "conf_media": 89.7,
+  "conf_min": 0.0,
+  "ocr_ms": 1349,
+  "tesseract": "5.4.0.20240606"
+}

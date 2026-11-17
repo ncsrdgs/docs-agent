@@ -1,0 +1,10 @@
+{
+  "arquivo": "009_jfm4.pdf",
+  "sha256": "55c19f768081ebd3914c8a95a2e0271b750618fbd32577205e8ef3b59602be79",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nDOCUMENTO FISCAL\n\nNº 92540\n\nDADOS DO EMITENTE\n\nNome do Fornecedor: Restaurante e Buffet Sabores do Brasil Ltda\n\nCNPJ/MF: 78.901.234/000156\nData: 14/02/2024\n\nDescrição dos Itens\n\nProduto/Serviço Quantidade Valor Unitário Valor Item\nServiço de buffet completo p/ 100 pessoas 1 R$ 8500,00 R$8.500,00\nBebidas variadas pacote evento 1 1.200,00 R$ 1.200,00\nDecoração temática 1 950,00 950,00\nGarçom adicional diária 3 280,00 R$ 840,00\n\nValor a Pagar 11.490,00",
+  "conf_media": 89.8,
+  "conf_min": 57.0,
+  "ocr_ms": 1183,
+  "tesseract": "5.4.0.20240606"
+}

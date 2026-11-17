@@ -1,0 +1,10 @@
+{
+  "arquivo": "008_cu07.pdf",
+  "sha256": "dc3dc25941aa6063b10bde805a38d0a9186d2873d91e98df8d32e48d72e5dd63",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nORDEM DE SERVIÇO\n\nOS Nº 41496\n\nM Realizado em 14/09/2023\n\n[64] Profissional Marcos Vinícius Almeida (312456)\n\n[64] Ativo Elevador de Passagei - Atlas Schindler 3300\n\nDefeito Encontrado\nElevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagem. Passageiros reclamando de desconforto e\n\ninsegurança. Sistema indicando falha no encoder do motor.\n\nReparo Efetuado\nSubstituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e\n\ninversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares.\n\nSituação: Concluído",
+  "conf_media": 90.0,
+  "conf_min": 0.0,
+  "ocr_ms": 1420,
+  "tesseract": "5.4.0.20240606"
+}

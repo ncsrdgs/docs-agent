@@ -1,0 +1,10 @@
+{
+  "arquivo": "006_b7qv.pdf",
+  "sha256": "3f7ce9e85f06f333b123978c1ef277b038b98eca1213afee0ad0f839eeb13002",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nRelatório Técnico\nData: 18.11.2023\n\nNome do Técnico\nRicardo Barbosa Lima - Mecânica Automotiva (Mat. 198234)\n\nIdentificação do Equipamento\n\nTipo: Empilhadeira\nModelo: Toyota 8FG25\nPatrimônio: VEI-2019-0078\nLocal: Pátio de Expedição\n\nDiagnóstico\n\nBicos injetores com vazamento e filtro de combustível obstruído, além de velas de ignição desgastadas\n\nAção Corretiva\nSubstituição do jogo completo de bicos injetores (4 unidades) e filtro de combustível. Troca das velas de ignição e cabos de vela.\nLimpeza do corpo de borboleta e regulagem da marcha lenta. Teste de emissões realizado e aprovado dentro dos parâmetros.",
+  "conf_media": 91.6,
+  "conf_min": 85.0,
+  "ocr_ms": 1375,
+  "tesseract": "5.4.0.20240606"
+}

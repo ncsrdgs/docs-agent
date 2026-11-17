@@ -1,0 +1,10 @@
+{
+  "arquivo": "013_mexy.pdf",
+  "sha256": "32561326adb90cab07a9a97926e66302b6e389ce09505337e45ee0d1da965308",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nRelatório Técnico\nData: 28.08.2023\n\nNome do Técnico\nJosé Antônio Pereira - Elétrica Industrial (Mat. 156234)\n\nIdentificação do Equipamento\n\nTipo: Quadro de Distribuição\nModelo: QDG-Principal 800A\nPatrimônio: ELE-2015-0023\nLocal: Subestação Principal\n\nDiagnóstico\nConexões dos barramentos principais com torque inadequado causando mau contato e aquecimento por efeito Joule\n\nAção Corretiva\n\nDesenergização completa do quadro com procedimento de lockout/tagout. Reaperto de todas as conexões dos barramentos com\ntorquímetro calibrado conforme especificação do fabricante. Substituição de dois terminais de compressão danificados e aplicação\nde pasta condutiva nas conexões críticas. Nova análise termográfica realizada após 48 horas de operação.",
+  "conf_media": 91.8,
+  "conf_min": 89.0,
+  "ocr_ms": 1555,
+  "tesseract": "5.4.0.20240606"
+}

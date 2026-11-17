@@ -1,0 +1,10 @@
+{
+  "arquivo": "003_w9rf.pdf",
+  "sha256": "03b60bf0f511150566489ba23ff1597a1bb255b5be4287d37956e3e8260775a6",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFICHA DE SERVIÇO\n\nDt. Execução 10/07/2023 Patrimônio TI-2020-0156\n\nColaborador Fernanda Costa Santo - 298765\n\nEquipamento: Servidor | Modelo: Dell PowerEdge R740 | Local: Data Center - Rack 07\n\nOcorrência\nServidor apresentando lentidão extrema e timeouts frequentes nas aplicações. Alertas de temperatura crítica sendo disparados pelo sistema de\nmonitoramento. Usuários reportando indisponibilidade do sistema ERP.\n\nProcedimento Adotado\nRealizada limpeza completa interna do servidor com ar comprimido e produtos antiestáticos. Substituídos os dois ventiladores defeituosos por\nunidades originais Dell. Aplicada pasta térmica nova nos processadores e verificado funcionamento do sistema de redundância de cooling.\n\nPeças/Materi:\n\n- Ventilador Dell R740 Original x2\n- Pasta térmica Arctic MX-4 x1",
+  "conf_media": 91.1,
+  "conf_min": 63.0,
+  "ocr_ms": 1508,
+  "tesseract": "5.4.0.20240606"
+}

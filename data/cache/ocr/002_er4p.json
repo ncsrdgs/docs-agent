@@ -1,0 +1,10 @@
+{
+  "arquivo": "002_er4p.pdf",
+  "sha256": "1997f4288e55e90d77048e09b3275f97bb37ea6569c6e73e50963b9652a54087",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nACORDO DE SERVIÇOS\n\nParte A Parte B\n\nTech Solutions Ltda CloudServ Tecnologia S.A.\n\n12.345.678/0001-90 98.765.432/0001-10\n\nAv. Paulista, 1500, Sala 1201, Bela Vista, São Paulo - SP, Rua da Consolação, 2800, Consolação, São Paulo - SP,\nCEP 01310-100 CEP 01416-000\n\nServiços\n\nPrestação de serviços de hospedagem em nuvem, incluindo infraestrutura como serviço (laaS), monitoramento 24/7, backup diário\nautomatizado, suporte técnico especializado e garantia de disponibilidade de 99,9% (SLA).\n\nPeríodo de Contrato Remuneração\n\n15/01/2024 - 14 de janeiro de 2025 R$8.500,00 /mês",
+  "conf_media": 91.3,
+  "conf_min": 81.0,
+  "ocr_ms": 1398,
+  "tesseract": "5.4.0.20240606"
+}

@@ -1,0 +1,10 @@
+{
+  "arquivo": "014_yfas.pdf",
+  "sha256": "e24137501d9a2feb46e9f31341f4eab56f26407da11a1b8516c2a3d03db0301d",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nNF-e Razão Social: MedSupply Equipamentos Mé Inscrição: 56.789.012/000134 Dt.18/11/23\n\nDesc. ot V.Un. V.Tot.\nLuva de procedimento látex cx c/100 50 R$42,90 R$ 2.145,00\nSeringa descartável 10ml cx c/100 Ki BRL 65,00 R$1.950,00\nÁlcool gel 70% 5 litros 20 R$ 49,90 R$998,00\nMáscara cirúrgica tripla ex c/50 40 R$ 18,90 R$ 756,00\nEstetoscópio Littmann Classic |ll 3 689,00 BRL 2.067,00\nTermômetro digital infravermelho 5 R$159,90 799,50\n\nMontante R$ 8038,50",
+  "conf_media": 83.4,
+  "conf_min": 20.0,
+  "ocr_ms": 1156,
+  "tesseract": "5.4.0.20240606"
+}

@@ -1,0 +1,10 @@
+{
+  "arquivo": "010_rt7s.pdf",
+  "sha256": "b74a79aea20ec42d5fa9c3e0b7d8c3913af2cbbb66c3ce060debfe05e824f149",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFATURA\n\nEmitido em: 15/07/24\n\nConsultoria Empresarial Sucesso Total S.A.\nDocumento: 22.333.444/000155\n\nProdutos\n\n- Consultoria financeira mensal 3 x R$4.500,00\n\n- Análise de viabilidade econômica 1 x BRL 8.000,00\n- Treinamento equipe comercial 8h 2x2.500,00\n\n- Elaboração plano de negócios 1x R$6.500,00\n\nR$ 13500,00\n8.000,00\n\nR$ 5000,00\nR$6.500,00\n\nTotal Geral\n\nR$ 35000,00",
+  "conf_media": 88.8,
+  "conf_min": 69.0,
+  "ocr_ms": 1099,
+  "tesseract": "5.4.0.20240606"
+}

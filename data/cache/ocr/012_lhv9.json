@@ -1,0 +1,10 @@
+{
+  "arquivo": "012_lhv9.pdf",
+  "sha256": "d19cba5e4e6b5f9c7d5d02693184f760c247d88c3299eb5dd6098eb77b5f7215",
+  "paginas": 1,
+  "texto": "--- página 1 ---\nFICHA DE SERVIÇO\n\nDt. Execução 15 de junho de 2024 Patrimônio CAL-2014-0001\n\nColaborador Renato Azevedo Costa - 301234\n\nEquipamento: Caldeira a Vapor | Modelo: ATA CVG-2000 | Local: Casa de Caldeiras\n\nOcorrência\nVazamento de vapor detectado na região do espelho superior da caldeira durante inspeção NR-13. Pressão de trabalho limitada a 60% da nominal\npor segurança. Produção operando com restrição de vapor.\n\nProcedimento Adotado\n\nReparo identificado requer parada programada de 5 dias e aprovação da gerência industrial para execução. Necessário contratação de empresa\nespecializada em soldagem de caldeiras com profissionais certificados. Laudo técnico elaborado e encaminhado para aprovação. Custo estimado do\nreparo: R$ 28.000,00.",
+  "conf_media": 92.1,
+  "conf_min": 89.0,
+  "ocr_ms": 1434,
+  "tesseract": "5.4.0.20240606"
+}
