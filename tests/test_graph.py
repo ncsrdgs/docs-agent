@@ -113,3 +113,5 @@ def test_falha_do_llm_na_extracao(monkeypatch):
     assert r.status == "failed"
     assert len(sim.extracoes) == graph.MAX_TENTATIVAS
     assert "extração falhou" in r.motivo
+    # a mensagem da exceção não volta ao modelo como se fosse erro de validação
+    assert sim.extracoes == [None, None]

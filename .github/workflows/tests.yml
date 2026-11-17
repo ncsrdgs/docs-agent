@@ -1,0 +1,33 @@
+name: testes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # Com o Tesseract instalado, os testes de ponta a ponta rodam (o OCR vem do cache versionado)
+      - name: Instalar o Tesseract
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-por
+
+      - name: Instalar o projeto
+        run: pip install -e ".[dev]"
+
+      - name: Rodar os testes
+        run: python -m pytest -q
+
+      # Reprodução offline: sem credenciais, os caches versionados devem dar o mesmo resultado
+      - name: Reproduzir os resultados e a acurácia
+        run: |
+          python -m pipeline.main --saida /tmp/saida
+          python eval/evaluate.py --resultados /tmp/saida/results.json

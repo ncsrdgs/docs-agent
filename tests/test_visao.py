@@ -92,6 +92,17 @@ def test_erro_e_anomalia_real_viram_so_anomalia(monkeypatch):
     assert r.visao_adotada
 
 
+def test_anomalia_que_some_na_imagem_continua_em_revisao(monkeypatch):
+    # a visão não tem âncora: se ela "fechar a conta", o documento não pode sair como ok
+    Cenario(monkeypatch, texto=Validacao(anomalias=["soma dos itens difere do total"]),
+            visao=Validacao())
+    r = graph.processar("data/raw/a.pdf")
+    assert r.status == "needs_review"
+    assert r.motivo.startswith("texto e imagem divergem")
+    assert "soma dos itens" in r.motivo
+    assert r.visao_adotada and r.dados.fornecedor == "lido da imagem"
+
+
 def test_visao_com_erro_nao_substitui(monkeypatch):
     Cenario(monkeypatch, texto=Validacao(anomalias=["soma"]), visao=Validacao(erros=["valor ausente"]))
     r = graph.processar("data/raw/a.pdf")

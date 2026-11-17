@@ -24,6 +24,10 @@ class ErroLLM(Exception):
     """Falha ao obter uma resposta estruturada válida do modelo."""
 
 
+class ErroConfiguracao(Exception):
+    """Credencial ausente ou inválida: problema do ambiente, não do documento."""
+
+
 @dataclass
 class Uso:
     tokens_in: int = 0
@@ -143,7 +147,13 @@ def extrair_estruturado(
         if achado:
             return achado
 
-    cadeia = _modelo(nome).with_structured_output(schema, include_raw=True)
+    try:
+        cadeia = _modelo(nome).with_structured_output(schema, include_raw=True)
+    except Exception as e:
+        # sem credencial não há o que repetir em cada documento: quem chama deve abortar o lote
+        raise ErroConfiguracao(
+            f"não foi possível criar o cliente do modelo ({e}); confira as credenciais no .env"
+        ) from e
 
     inicio = time.perf_counter()
     try:

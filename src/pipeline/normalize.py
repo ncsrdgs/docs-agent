@@ -57,10 +57,11 @@ def parse_valor(texto: str | None) -> float | None:
     """Interpreta valores como 'R$ 1.950,00', 'BRL 3899,99', '28.500,00 por mês'."""
     if not texto:
         return None
-    m = re.search(r"\d[\d.,]*\d|\d", texto)
+    m = re.search(r"\d{1,3}(?:[ \u00a0]\d{3})+(?:[.,]\d+)?|\d[\d.,]*\d|\d", texto)
     if not m:
         return None
-    n = m.group()
+    n = re.sub(r"[ \u00a0]", "", m.group())  # "1 234,56" (milhar separado por espaço)
+    negativo = bool(re.search(r"(?:^|[^\w])[-\u2212]\s*(?:R\$|BRL)?\s*$", texto[: m.start()]))
     if "," in n and "." in n:
         if n.rfind(",") > n.rfind("."):
             n = n.replace(".", "").replace(",", ".")
@@ -71,9 +72,10 @@ def parse_valor(texto: str | None) -> float | None:
     elif "." in n and re.fullmatch(r"\d{1,3}(\.\d{3})+", n):
         n = n.replace(".", "")
     try:
-        return round(float(n), 2)
+        valor = round(float(n), 2)
     except ValueError:
         return None
+    return -valor if negativo else valor
 
 
 def formatar_documento(texto: str | None) -> tuple[str | None, bool]:
