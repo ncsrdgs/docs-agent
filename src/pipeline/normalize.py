@@ -110,6 +110,17 @@ def _documento(texto, rotulo, avisos):
     return r
 
 
+_MARCADOR_LISTA = re.compile(r"^\s*[-–—•*·]+\s+")
+
+
+def limpar_descricao(texto: str | None) -> str | None:
+    """Tira o marcador de lista ("- Item") que alguns documentos imprimem antes da descrição."""
+    if texto is None:
+        return None
+    limpo = _MARCADOR_LISTA.sub("", texto).strip()
+    return limpo or texto.strip()
+
+
 def normalizar(tipo: str, extraido) -> tuple[object, list[str]]:
     """Converte o modelo *Extraido no modelo final. Devolve (modelo, avisos)."""
     avisos: list[str] = []
@@ -118,7 +129,7 @@ def normalizar(tipo: str, extraido) -> tuple[object, list[str]]:
         e: NotaFiscalExtraida = extraido
         itens = [
             Item(
-                descricao=i.descricao,
+                descricao=limpar_descricao(i.descricao),
                 quantidade=_valor(i.quantidade, f"item {n} quantidade", avisos),
                 valor_unitario=_valor(i.valor_unitario, f"item {n} valor unitário", avisos),
                 valor_total=_valor(i.valor_total, f"item {n} valor total", avisos),

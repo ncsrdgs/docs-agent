@@ -1,6 +1,7 @@
 """Cliente do modelo (Gemini) com saída estruturada, medição de uso e cache em disco."""
 from __future__ import annotations
 
+import base64
 import hashlib
 import json
 import os
@@ -10,6 +11,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
 
+from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from pydantic import BaseModel
 
@@ -61,12 +63,17 @@ def _cache_dir() -> Path:
     return Path(os.getenv("LLM_CACHE_DIR", "data/cache/llm"))
 
 
-def _chave(schema: type[BaseModel], instrucoes: str, texto: str, modelo: str) -> str:
-    base = json.dumps(
-        [modelo, instrucoes, texto, schema.model_json_schema()],
-        sort_keys=True,
-        ensure_ascii=False,
-    )
+def _chave(
+    schema: type[BaseModel],
+    instrucoes: str,
+    texto: str,
+    modelo: str,
+    imagens_id: str | None = None,
+) -> str:
+    itens = [modelo, instrucoes, texto, schema.model_json_schema()]
+    if imagens_id:  # só entra na chave quando há imagem: as chaves de texto não mudam
+        itens.append(f"imagens:{imagens_id}")
+    base = json.dumps(itens, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(base.encode("utf-8")).hexdigest()
 
 
@@ -102,13 +109,35 @@ def _gravar_cache(chave: str, objeto: BaseModel, uso: Uso) -> None:
         pass  # cache é otimização; falha ao gravar não derruba o processamento
 
 
-def extrair_estruturado(
-    schema: type[BaseModel], instrucoes: str, texto: str, modelo: str | None = None
-) -> tuple[BaseModel, Uso]:
-    """Chama o modelo e devolve (objeto validado no schema, uso de tokens e tempo)."""
-    nome = modelo or config.MODELO
+def _mensagens(instrucoes: str, texto: str, imagens: list[bytes] | None) -> list:
+    if not imagens:
+        return [("system", instrucoes), ("human", texto)]
+    conteudo = [{"type": "text", "text": texto}]
+    for img in imagens:
+        uri = "data:image/jpeg;base64," + base64.b64encode(img).decode("ascii")
+        conteudo.append({"type": "image_url", "image_url": {"url": uri}})
+    return [SystemMessage(content=instrucoes), HumanMessage(content=conteudo)]
 
-    chave = _chave(schema, instrucoes, texto, nome) if _cache_ativo() else None
+
+def extrair_estruturado(
+    schema: type[BaseModel],
+    instrucoes: str,
+    texto: str,
+    modelo: str | None = None,
+    imagens: list[bytes] | None = None,
+    imagens_id: str | None = None,
+) -> tuple[BaseModel, Uso]:
+    """Chama o modelo e devolve (objeto validado no schema, uso de tokens e tempo).
+
+    `imagens` (JPEG) vão junto do texto. `imagens_id` identifica as imagens na chave do
+    cache; sem ele, usa o hash dos bytes. Quem chama deve passar um id estável (por
+    exemplo, o hash do PDF), porque a codificação do JPEG pode variar entre sistemas.
+    """
+    nome = modelo or config.MODELO
+    if imagens and not imagens_id:
+        imagens_id = hashlib.sha256(b"".join(imagens)).hexdigest()
+
+    chave = _chave(schema, instrucoes, texto, nome, imagens_id) if _cache_ativo() else None
     if chave:
         achado = _ler_cache(chave, schema)
         if achado:
@@ -118,7 +147,7 @@ def extrair_estruturado(
 
     inicio = time.perf_counter()
     try:
-        resp = cadeia.invoke([("system", instrucoes), ("human", texto)])
+        resp = cadeia.invoke(_mensagens(instrucoes, texto, imagens))
     except Exception as e:
         raise ErroLLM(f"falha na chamada ao modelo: {e}") from e
     latencia = int((time.perf_counter() - inicio) * 1000)

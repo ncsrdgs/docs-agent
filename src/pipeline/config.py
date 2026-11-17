@@ -18,6 +18,11 @@ TEMPERATURA = 0.0
 MAX_RETRIES = 5
 TIMEOUT_S = 60
 
+# Fallback de visão: documentos que iriam para revisão são relidos a partir da imagem
+VISAO = os.getenv("VISAO_FALLBACK", "1") != "0"
+VISAO_MAX_LADO = 1800  # maior lado da imagem enviada, em pixels
+VISAO_MAX_PAGINAS = 3
+
 # Trecho do texto que a classificação (regras e LLM) considera
 CABECALHO_REGRAS = 100
 TRECHO_CLASSIFICACAO = 3000

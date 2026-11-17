@@ -52,3 +52,37 @@ def test_formatar_cpf():
 def test_formatar_documento_invalido_e_vazio():
     assert formatar_documento("123") == ("123", False)
     assert formatar_documento(None) == (None, True)
+
+# --- marcador de lista na descrição dos itens ---------------------------------------
+@pytest.mark.parametrize(
+    "entrada, esperado",
+    [
+        ("- Cabo HDMI 2.0 1,8m", "Cabo HDMI 2.0 1,8m"),
+        ("– Areia média m³", "Areia média m³"),
+        ("• Brita 1 m³", "Brita 1 m³"),
+        ("  -  Cimento CP II 50kg ", "Cimento CP II 50kg"),
+        ("Cabo HDMI 2.0 1,8m", "Cabo HDMI 2.0 1,8m"),
+        ("Cabo USB-C 2m", "Cabo USB-C 2m"),  # hífen no meio não é marcador
+        ("-5V fonte", "-5V fonte"),  # sem espaço depois do hífen: mantém
+        ("-", "-"),
+        (None, None),
+    ],
+)
+def test_limpar_descricao(entrada, esperado):
+    from pipeline.normalize import limpar_descricao
+
+    assert limpar_descricao(entrada) == esperado
+
+
+def test_normalizar_nota_limpa_o_marcador_dos_itens():
+    from pipeline.models import ItemExtraido, NotaFiscalExtraida
+    from pipeline.normalize import normalizar
+
+    ext = NotaFiscalExtraida(
+        fornecedor="F",
+        itens=[ItemExtraido(descricao="- Cabo HDMI", quantidade="2", valor_unitario="R$ 10,00",
+                            valor_total="R$ 20,00")],
+        valor_total="R$ 20,00",
+    )
+    final, _ = normalizar("nota_fiscal", ext)
+    assert final.itens[0].descricao == "Cabo HDMI"

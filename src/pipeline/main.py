@@ -61,6 +61,11 @@ def main() -> None:
         f"tokens: {resumo['tokens_in']} entrada, {resumo['tokens_out']} saída"
     )
 
+    if resumo["com_visao"]:
+        print(
+            f"fallback de visão: {resumo['com_visao']} documentos, "
+            f"{resumo['visao_adotada']} com os dados adotados"
+        )
     if resumo["ocr_ms_medio_por_documento"] is not None:
         print(
             f"OCR: {resumo['ocr_ms_medio_por_documento']} ms por documento, "

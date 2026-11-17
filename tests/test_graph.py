@@ -42,6 +42,7 @@ class Simulacao:
         monkeypatch.setattr(graph, "classificar", classificar)
         monkeypatch.setattr(graph, "extrair", extrair)
         monkeypatch.setattr(graph, "validar", validar)
+        monkeypatch.setattr(graph.config, "VISAO", False)  # a visão tem testes próprios
 
 
 def test_ok_sem_pendencias(monkeypatch):

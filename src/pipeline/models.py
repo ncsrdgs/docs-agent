@@ -143,6 +143,8 @@ class Registro(BaseModel):
     tokens_out: int = 0
     latencia_ms: int = 0
     tentativas: int = 0
+    visao_tentada: bool = False  # passou pelo fallback de visão
+    visao_adotada: bool = False  # os dados finais vieram da imagem
 
 
 # Mapas usados pelo roteamento e pela extração
