@@ -1,0 +1,62 @@
+[
+  {
+    "id": "nf_nfse",
+    "esperado": "nota_fiscal",
+    "texto": "NOTA FISCAL DE SERVIÇOS ELETRÔNICA - NFS-e\nPrestador: Oficina Mecânica Rodrigues ME  CNPJ 12.987.654/0001-30\nTomador: Transportes Alfa Ltda\nEmissão: 03/05/2024\nDiscriminação: Troca de óleo e filtros, alinhamento e balanceamento\nValor dos serviços: R$ 1.280,00\nTotal da nota: R$ 1.280,00"
+  },
+  {
+    "id": "nf_recibo",
+    "esperado": "nota_fiscal",
+    "texto": "DANFE\nDocumento Auxiliar da Nota Fiscal Eletrônica\nEmitente: Distribuidora de Bebidas Serra Ltda\nCNPJ 45.321.987/0001-08\nItem  Descrição  Qtd  Unit  Total\n1  Cerveja lata 350ml cx c/12  40  38,00  1.520,00\n2  Refrigerante 2L fardo c/6  30  27,50  825,00\nValor total da nota: R$ 2.345,00"
+  },
+  {
+    "id": "nf_conta",
+    "esperado": "nota_fiscal",
+    "texto": "Conta de fornecimento\nEmpresa: Papelaria Central Ltda\nCNPJ: 33.222.111/0001-44\nData: 12/09/2024\nResma papel A4 500fls  20 x 24,90  498,00\nCaneta esferográfica cx c/50  10 x 31,00  310,00\nTotal a pagar: 808,00"
+  },
+  {
+    "id": "ct_termo",
+    "esperado": "contrato",
+    "texto": "TERMO DE PRESTAÇÃO DE SERVIÇOS\nContratante: Clínica Vida Plena Ltda, CNPJ 56.123.789/0001-90\nContratada: Contábil Prime Assessoria ME, CNPJ 78.456.123/0001-21\nObjeto: serviços de contabilidade e folha de pagamento\nVigência: 01/02/2024 a 31/01/2025\nValor mensal: R$ 3.900,00"
+  },
+  {
+    "id": "ct_locacao",
+    "esperado": "contrato",
+    "texto": "CONTRATO DE LOCAÇÃO DE EQUIPAMENTOS\nLOCADOR: Máquinas Pesadas Sul Ltda, CNPJ 22.456.789/0001-10\nLOCATÁRIO: Construtora Horizonte S.A., CNPJ 11.654.321/0001-77\nObjeto: locação de uma retroescavadeira\nPrazo: de 10/03/2024 até 09/09/2024\nValor: R$ 18.000,00 por mês"
+  },
+  {
+    "id": "ct_fatura_no_texto",
+    "esperado": "contrato",
+    "texto": "CONTRATO DE PRESTAÇÃO DE SERVIÇOS\nCONTRATANTE: Escritório Ribeiro & Filhos ME, 90.111.222/0001-33\nCONTRATADA: Limpeza Express Ltda, 44.333.222/0001-55\nO pagamento será feito mediante fatura mensal emitida até o dia 5.\nObjeto: limpeza de escritório três vezes por semana\nVigência: 01/04/2024 a 31/03/2025\nPreço: R$ 2.200,00 por mês"
+  },
+  {
+    "id": "rl_vistoria",
+    "esperado": "relatorio_manutencao",
+    "texto": "RELATÓRIO DE VISTORIA E MANUTENÇÃO\nData: 19/06/2024\nTécnico responsável: Paulo Henrique Duarte (Mat. 223344)\nEquipamento: Bomba centrífuga KSB Meganorm 50-200\nProblema: vazamento pela selagem mecânica\nSolução: substituição do selo mecânico e teste de pressão"
+  },
+  {
+    "id": "rl_chamado",
+    "esperado": "relatorio_manutencao",
+    "texto": "CHAMADO TÉCNICO Nº 20418\nAbertura: 2024-07-02\nAtendente: Luciana Prado Faria\nEquipamento: Ar-condicionado split Daikin 18000 BTU\nDefeito relatado: não gela e pinga água\nServiço executado: limpeza do dreno, recarga de gás R-410A e limpeza dos filtros"
+  },
+  {
+    "id": "rl_laudo",
+    "esperado": "relatorio_manutencao",
+    "texto": "LAUDO DE MANUTENÇÃO CORRETIVA\n08.08.2024\nResponsável técnico: Eduardo Salles Moura\nAtivo: Esteira transportadora ETC-120\nOcorrência: motor com superaquecimento e correia desalinhada\nAção realizada: troca do rolamento, alinhamento da correia e lubrificação"
+  },
+  {
+    "id": "arm_recibo_cita_nf",
+    "esperado": "desconhecido",
+    "texto": "RECIBO DE PAGAMENTO\nRecebi de Marcos Antônio Teixeira a quantia de R$ 450,00 referente ao aluguel de março. A nota fiscal não é exigida neste caso.\nCuritiba, 05/03/2024"
+  },
+  {
+    "id": "unk_receita",
+    "esperado": "desconhecido",
+    "texto": "BOLO DE CENOURA\nIngredientes: 3 cenouras, 4 ovos, 1 xícara de óleo, 2 xícaras de açúcar, 2 e 1/2 xícaras de farinha, 1 colher de fermento.\nModo de preparo: bata no liquidificador as cenouras, os ovos e o óleo. Misture com o restante e asse por 40 minutos."
+  },
+  {
+    "id": "unk_email",
+    "esperado": "desconhecido",
+    "texto": "De: ana.souza@exemplo.com\nPara: equipe@exemplo.com\nAssunto: Reunião de quinta-feira\nOlá pessoal, confirmo a reunião de planejamento na quinta às 14h, na sala 3. Por favor, enviem os relatórios até quarta."
+  }
+]

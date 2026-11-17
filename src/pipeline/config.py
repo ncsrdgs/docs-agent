@@ -19,7 +19,7 @@ MAX_RETRIES = 5
 TIMEOUT_S = 60
 
 # Trecho do texto que a classificação (regras e LLM) considera
-CABECALHO_REGRAS = 400
+CABECALHO_REGRAS = 100
 TRECHO_CLASSIFICACAO = 3000
 
 
