@@ -1,0 +1,291 @@
+{
+  "_comentario": "Gabarito transcrito manualmente a partir dos PDFs, sem consultar a saída do pipeline. Campos de texto truncados no próprio documento (ex.: 'Marcos Vinícius Alme') estão como impressos. Datas dd/mm/aa interpretadas como dia/mês/ano.",
+  "documentos": {
+    "001_rljd": {
+      "tipo": "nota_fiscal",
+      "dados": {
+        "fornecedor": "Tech Solutions Ltda",
+        "cnpj": "12.345.678/0001-90",
+        "data": "2023-03-15",
+        "itens": [
+          {
+            "descricao": "Notebook Dell Inspiron 15",
+            "quantidade": 5,
+            "valor_unitario": 3899.99,
+            "valor_total": 19499.95
+          },
+          {
+            "descricao": "Mouse sem fio Logitech M280",
+            "quantidade": 10,
+            "valor_unitario": 89.9,
+            "valor_total": 899.0
+          },
+          {
+            "descricao": "Teclado mecânico Redragon Kumara",
+            "quantidade": 8,
+            "valor_unitario": 249.0,
+            "valor_total": 1992.0
+          },
+          {
+            "descricao": "Monitor LG 24 polegadas Full HD",
+            "quantidade": 5,
+            "valor_unitario": 899.0,
+            "valor_total": 4495.0
+          },
+          {
+            "descricao": "Cabo HDMI 2.0 1,8m",
+            "quantidade": 15,
+            "valor_unitario": 29.9,
+            "valor_total": 448.5
+          }
+        ],
+        "valor_total": 25791.45
+      }
+    },
+    "008_sl0j": {
+      "tipo": "nota_fiscal",
+      "dados": {
+        "fornecedor": "MedSupply Equipamentos Médicos Eireli",
+        "cnpj": "56789012000134",
+        "data": "2023-11-18",
+        "itens": [
+          {
+            "descricao": "Luva de procedimento látex cx c/100",
+            "quantidade": 50,
+            "valor_unitario": 42.9,
+            "valor_total": 2145.0
+          },
+          {
+            "descricao": "Seringa descartável 10ml cx c/100",
+            "quantidade": 30,
+            "valor_unitario": 65.0,
+            "valor_total": 1950.0
+          },
+          {
+            "descricao": "Álcool gel 70% 5 litros",
+            "quantidade": 20,
+            "valor_unitario": 49.9,
+            "valor_total": 998.0
+          },
+          {
+            "descricao": "Máscara cirúrgica tripla cx c/50",
+            "quantidade": 40,
+            "valor_unitario": 18.9,
+            "valor_total": 756.0
+          },
+          {
+            "descricao": "Estetoscópio Littmann Classic III",
+            "quantidade": 3,
+            "valor_unitario": 689.0,
+            "valor_total": 2067.0
+          },
+          {
+            "descricao": "Termômetro digital infravermelho",
+            "quantidade": 5,
+            "valor_unitario": 159.9,
+            "valor_total": 799.5
+          }
+        ],
+        "valor_total": 8038.5
+      }
+    },
+    "014_yfas": {
+      "tipo": "nota_fiscal",
+      "dados": {
+        "fornecedor": "MedSupply Equipamentos Mé",
+        "cnpj": "56.789.012/000134",
+        "data": "2023-11-18",
+        "itens": [
+          {
+            "descricao": "Luva de procedimento látex cx c/100",
+            "quantidade": 50,
+            "valor_unitario": 42.9,
+            "valor_total": 2145.0
+          },
+          {
+            "descricao": "Seringa descartável 10ml cx c/100",
+            "quantidade": 30,
+            "valor_unitario": 65.0,
+            "valor_total": 1950.0
+          },
+          {
+            "descricao": "Álcool gel 70% 5 litros",
+            "quantidade": 20,
+            "valor_unitario": 49.9,
+            "valor_total": 998.0
+          },
+          {
+            "descricao": "Máscara cirúrgica tripla cx c/50",
+            "quantidade": 40,
+            "valor_unitario": 18.9,
+            "valor_total": 756.0
+          },
+          {
+            "descricao": "Estetoscópio Littmann Classic III",
+            "quantidade": 3,
+            "valor_unitario": 689.0,
+            "valor_total": 2067.0
+          },
+          {
+            "descricao": "Termômetro digital infravermelho",
+            "quantidade": 5,
+            "valor_unitario": 159.9,
+            "valor_total": 799.5
+          }
+        ],
+        "valor_total": 8038.5
+      }
+    },
+    "015_a7mn": {
+      "tipo": "nota_fiscal",
+      "dados": {
+        "fornecedor": "Móveis Escritório Conforto ME",
+        "cnpj": "66.777.888/0001-99",
+        "data": "2024-10-28",
+        "itens": [
+          {
+            "descricao": "Cadeira presidente ergonômica",
+            "quantidade": 5,
+            "valor_unitario": 1290.0,
+            "valor_total": 6450.0
+          },
+          {
+            "descricao": "Mesa escritório 1,50m c/ gavetas",
+            "quantidade": 5,
+            "valor_unitario": 850.0,
+            "valor_total": 4250.0
+          },
+          {
+            "descricao": "Armário alto 2 portas",
+            "quantidade": 3,
+            "valor_unitario": 720.0,
+            "valor_total": 2160.0
+          },
+          {
+            "descricao": "Gaveteiro volante 3 gavetas",
+            "quantidade": 5,
+            "valor_unitario": 380.0,
+            "valor_total": 1900.0
+          }
+        ],
+        "valor_total": 14760.0
+      }
+    },
+    "001_z7fp": {
+      "tipo": "contrato",
+      "dados": {
+        "contratante": {
+          "nome": "Maria Aparecida Santos Silva",
+          "documento": "123.456.789-00"
+        },
+        "contratado": {
+          "nome": "Advocacia Especializada Dr. Roberto Mendes",
+          "documento": "45.678.901/0001-23"
+        },
+        "objeto": "Prestação de serviços advocatícios para acompanhamento de processo de inventário e partilha de bens, incluindo elaboração de petições, comparecimento a audiências, negociação entre herdeiros e regularização de documentação imobiliária.",
+        "vigencia": {
+          "inicio": "2024-02-10",
+          "fim": "2024-08-10"
+        },
+        "valor_mensal": 2800.0
+      }
+    },
+    "002_er4p": {
+      "tipo": "contrato",
+      "dados": {
+        "contratante": {
+          "nome": "Tech Solutions Ltda",
+          "documento": "12.345.678/0001-90"
+        },
+        "contratado": {
+          "nome": "CloudServ Tecnologia S.A.",
+          "documento": "98.765.432/0001-10"
+        },
+        "objeto": "Prestação de serviços de hospedagem em nuvem, incluindo infraestrutura como serviço (IaaS), monitoramento 24/7, backup diário automatizado, suporte técnico especializado e garantia de disponibilidade de 99,9% (SLA).",
+        "vigencia": {
+          "inicio": "2024-01-15",
+          "fim": "2025-01-14"
+        },
+        "valor_mensal": 8500.0
+      }
+    },
+    "004_9i69": {
+      "tipo": "contrato",
+      "dados": {
+        "contratante": {
+          "nome": "Shopping Center Vitória Mall S.A.",
+          "documento": "56.789.432/0001-65"
+        },
+        "contratado": {
+          "nome": "Climatizar Ar Condicionado Industrial Ltda",
+          "documento": "67.890.321/0001-76"
+        },
+        "objeto": "Prestação de serviços de manutenção preventiva e corretiva do sistema central de ar condicionado do shopping, incluindo 04 chillers de 500 TR, torres de resfriamento, bombas, dutos e fan-coils das áreas comuns, com visitas técnicas semanais e atendimento emergencial.",
+        "vigencia": {
+          "inicio": "2024-07-01",
+          "fim": "2026-06-30"
+        },
+        "valor_mensal": 52000.0
+      }
+    },
+    "003_pthm": {
+      "tipo": "contrato",
+      "dados": {
+        "contratante": {
+          "nome": "Escola Infantil Pequenos Gênios Ltda",
+          "documento": "67.890.321/0001-76"
+        },
+        "contratado": {
+          "nome": "NutriKids Alimentação Escolar Eireli",
+          "documento": "78.901.210/0001-87"
+        },
+        "objeto": "Prestação de serviços de fornecimento de alimentação escolar, incluindo preparo e distribuição de 02 lanches e 01 almoço diários para aproximadamente 120 alunos, com cardápio elaborado por nutricionista, atendimento a restrições alimentares e alergias, e fornecimento de todos os insumos e utensílios.",
+        "vigencia": {
+          "inicio": "2024-02-05",
+          "fim": "2024-12-20"
+        },
+        "valor_mensal": 28500.0
+      }
+    },
+    "001_pjpo": {
+      "tipo": "relatorio_manutencao",
+      "dados": {
+        "data": "2023-07-10",
+        "tecnico": "Fernanda Costa Santo",
+        "equipamento": "Servidor Dell PowerEdge R740",
+        "problema": "Servidor apresentando lentidão extrema e timeouts frequentes nas aplicações. Alertas de temperatura crítica sendo disparados pelo sistema de monitoramento. Usuários reportando indisponibilidade do sistema ERP.",
+        "solucao": "Realizada limpeza completa interna do servidor com ar comprimido e produtos antiestáticos. Substituídos os dois ventiladores defeituosos por unidades originais Dell. Aplicada pasta térmica nova nos processadores e verificado funcionamento do sistema de redundância de cooling."
+      }
+    },
+    "002_6qvg": {
+      "tipo": "relatorio_manutencao",
+      "dados": {
+        "data": "2023-09-14",
+        "tecnico": "Marcos Vinícius Almeida",
+        "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
+        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagens. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
+        "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
+      }
+    },
+    "004_6hhe": {
+      "tipo": "relatorio_manutencao",
+      "dados": {
+        "data": "2023-09-14",
+        "tecnico": "Marcos Vinícius Almeida",
+        "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
+        "problema": "Encoder incremental do motor de tração com leitura intermitente e cabos de comunicação com isolamento danificado",
+        "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
+      }
+    },
+    "009_jc20": {
+      "tipo": "relatorio_manutencao",
+      "dados": {
+        "data": "2023-09-14",
+        "tecnico": "Marcos Vinícius Alme",
+        "equipamento": "Elevador de Passageiros Atlas Schindler 3300",
+        "problema": "Elevador parando entre andares com frequência e apresentando trancos durante aceleração e frenagens. Passageiros reclamando de desconforto e insegurança. Sistema indicando falha no encoder do motor.",
+        "solucao": "Substituição do encoder incremental por unidade nova compatível com o sistema de controle. Troca completa do chicote de cabos entre encoder e inversor de frequência. Realizada calibração do sistema de controle de velocidade e testes de nivelamento em todos os andares."
+      }
+    }
+  }
+}
