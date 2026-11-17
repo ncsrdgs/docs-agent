@@ -3,6 +3,8 @@ import hashlib
 import io
 import json
 import os
+import time
+from functools import lru_cache
 from pathlib import Path
 
 import pymupdf
@@ -23,6 +25,14 @@ MIN_CHARS = 20
 
 class OcrError(Exception):
     """Falha controlada ao ler ou fazer OCR de um arquivo."""
+
+
+@lru_cache(maxsize=1)
+def versao_tesseract() -> str:
+    try:
+        return str(pytesseract.get_tesseract_version())
+    except Exception:
+        return "desconhecida"
 
 
 def _sha256(caminho: Path) -> str:
@@ -72,6 +82,7 @@ def ocr_pdf(caminho, usar_cache: bool = True) -> dict:
         sha = _sha256(caminho)
     except OSError as e:
         raise OcrError(f"não foi possível ler o arquivo: {e}") from e
+    inicio = time.perf_counter()
 
     cache = CACHE_DIR / f"{caminho.stem}.json"
     if usar_cache and cache.exists():
@@ -114,6 +125,8 @@ def ocr_pdf(caminho, usar_cache: bool = True) -> dict:
         "texto": "\n\n".join(f"--- página {n} ---\n{t}" for n, t in partes),
         "conf_media": round(sum(confs) / len(confs), 1) if confs else 0.0,
         "conf_min": round(min(confs), 1) if confs else 0.0,
+        "ocr_ms": int((time.perf_counter() - inicio) * 1000),
+        "tesseract": versao_tesseract(),
     }
 
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
